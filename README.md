@@ -17,18 +17,16 @@ A brief description of the files and folders:
 
 Copyright (c) 2017-2021 Cleanlab Inc.
 
-All files listed above and contained in this folder (https://github.com/cleanlab/cleanlab/examples) are part of cleanlab.
+All files listed above and contained in this folder (<https://github.com/cleanlab/cleanlab/examples>) are part of cleanlab.
 
 cleanlab is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
+it under the terms of the GNU Affero General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
 cleanlab is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+GNU Affero General Public License for more details.
 
-You should have received a copy of the GNU General Public License in cleanlab/LICENSE.
-
-This agreement applies to this version and all previous versions of cleanlab.
+You should have received a copy of the GNU Affero General Public License in [LICENSE](LICENSE).
