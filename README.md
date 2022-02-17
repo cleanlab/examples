@@ -17,7 +17,7 @@ A brief description of the files and folders:
 
 Copyright (c) 2017-2021 Cleanlab Inc.
 
-All files listed above and contained in this folder (<https://github.com/cleanlab/cleanlab/examples>) are part of cleanlab.
+All files listed above and contained in this folder (<https://github.com/cleanlab/examples>) are part of cleanlab.
 
 cleanlab is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
