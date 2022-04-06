@@ -1,21 +1,61 @@
-# ``cleanlab`` Examples
+# `cleanlab` Examples
 
-Not sure where to start? Try checking out how to find [ImageNet Label Errors](imagenet/imagenet_train_label_errors.ipynb).
+This repo contains code examples that demonstrate how to use [cleanlab](https://github.com/cleanlab) and how [confident learning](https://arxiv.org/abs/1911.00068) works to find label errors.
 
+**Latest examples:**
 
-A brief description of the files and folders:
-* `imagenet`, 'cifar10', 'mnist' - code to find label errors in these datasets and reproduce the results in the [confident learning paper](https://arxiv.org/abs/1911.00068). You will also need to `git clone` [confidentlearning-reproduce](https://github.com/cgnorthcutt/confidentlearning-reproduce).
-  - [imagenet_train_crossval.py](imagenet/imagenet_train_crossval.py) - a powerful script to train cross-validated predictions on ImageNet, combine cv folds, train with on masked input (train without label errors), etc.
-  - [cifar10_train_crossval.py](cifar10/cifar10_train_crossval.py) - same as above, but for CIFAR.
-* `classifier_comparison.ipynb` - tutorial showing `cleanlab` performance across 10 classifiers and 4 dataset distributions.
-* `iris_simple_example.ipynb` - tutorial showing how to use `cleanlab` on the simple IRIS dataset.
-* `model_selection_demo.ipynb` - tutorial showing model selection on the cleanlab's parameter settings.
-* `simplifying_confident_learning_tutorial.ipynb` - tutorial implementing cleanlab as raw numpy code.
-* `visualizing_confident_learning.ipynb` - tutorial to demonstrate the noise matrix estimation performed by cleanlab.
+Recommended order of examples to try:
+
+1. [iris_simple_example.ipynb](https://github.com/cleanlab/examples/blob/master/iris_simple_example.ipynb)
+
+   Use `cleanlab` to find synthetic label errors in the Iris dataset.
+
+2. [classifier_comparison.ipynb](https://github.com/cleanlab/examples/blob/master/classifier_comparison.ipynb)
+
+   Demonstrate how `cleanlab` can be used to train 10 different classifiers on 4 dataset distributions with label errors.
+
+3. [model_selection_demo.ipynb](https://github.com/cleanlab/examples/blob/master/model_selection_demo.ipynb)
+
+   Perform hyperparameter optimization with `cleanlab`'s hyperparameters.
+
+4. [simplifying_confident_learning_tutorial.ipynb](https://github.com/cleanlab/examples/blob/master/simplifying_confident_learning_tutorial.ipynb)
+
+   Implement `cleanlab` as raw numpy code.
+
+5. [visualizing_confident_learning.ipynb](https://github.com/cleanlab/examples/blob/master/visualizing_confident_learning.ipynb)
+
+   Demonstrate how `cleanlab` performs noise matrix estimation.
+
+For old examples, see the `contrib` folder.
+
+## Instructions
+
+To run the latest example scripts and notebooks, execute the commands below which will install the required libraries in a virtual environment.
+
+```console
+python3 -m pip install virtualenv
+python3 -m venv env
+source env/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
+Run the notebooks individually or run the scripts below which will execute and save each notebook.
+
+Bash script:
+
+```console
+./run_all_notebooks.sh
+```
+
+Python script (can pass optional arguments):
+
+```console
+python run_all_notebooks.py --ignore_sub_dirs env
+```
 
 ## License
 
-Copyright (c) 2017-2021 Cleanlab Inc.
+Copyright (c) 2017-2022 Cleanlab Inc.
 
 All files listed above and contained in this folder (<https://github.com/cleanlab/examples>) are part of cleanlab.
 
@@ -26,7 +66,7 @@ the Free Software Foundation, either version 3 of the License, or
 
 cleanlab is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License in [LICENSE](LICENSE).
