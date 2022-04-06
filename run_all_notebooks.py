@@ -12,7 +12,7 @@ import click
     help="Root directory to run all Jupyter notebooks.",
 )
 def main(root_dir):
-    """Traverse root directory and run all Jupyter notebooks"""
+    """Run all Jupyter notebooks in the root directory"""
 
     print("-----------------------------------------------------------------")
     print(f"Executing all Jupyter notebooks in root directory: {root_dir}")
