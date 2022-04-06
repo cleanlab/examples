@@ -2,7 +2,7 @@
 
 This repo contains code examples that demonstrate how to use [cleanlab](https://github.com/cleanlab) and how [confident learning](https://arxiv.org/abs/1911.00068) works to find label errors.
 
-**Latest examples:**
+## Latest Examples
 
 Recommended order of examples to try:
 
@@ -25,8 +25,6 @@ Recommended order of examples to try:
 5. [visualizing_confident_learning.ipynb](https://github.com/cleanlab/examples/blob/master/visualizing_confident_learning.ipynb)
 
    Demonstrate how `cleanlab` performs noise matrix estimation.
-
-For old examples, see the `contrib` folder.
 
 ## Instructions
 
@@ -52,6 +50,10 @@ Python script (can pass optional arguments):
 ```console
 python run_all_notebooks.py --ignore_sub_dirs env
 ```
+
+## Old Examples
+
+See the `contrib` folder for examples from v1 of `cleanlab`.
 
 ## License
 
