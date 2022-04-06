@@ -37,7 +37,7 @@ source env/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
-Run the notebooks individually or run the scripts below which will execute and save each notebook.
+Run the notebooks individually or run either scripts below which will execute and save each notebook.
 
 Bash script:
 
