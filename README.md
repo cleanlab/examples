@@ -10,13 +10,15 @@ Recommended order of examples to try:
 | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | [iris_simple_example.ipynb](https://github.com/cleanlab/examples/blob/master/iris_simple_example.ipynb)                                         | Use `cleanlab` to find synthetic label errors in the Iris dataset.                                                     |
 | [classifier_comparison.ipynb](https://github.com/cleanlab/examples/blob/master/classifier_comparison.ipynb)                                     | Demonstrate how `cleanlab` can be used to train 10 different classifiers on 4 dataset distributions with label errors. |
-| [model_selection_demo.ipynb](https://github.com/cleanlab/examples/blob/master/model_selection_demo.ipynb)                                       | Perform hyperparameter optimization with `cleanlab`'s hyperparameters.                                                 |
+| [model_selection_demo.ipynb](https://github.com/cleanlab/examples/blob/master/model_selection_demo.ipynb)                                       | Perform hyperparameter optimization to find the best settings of `cleanlab`'s optional parameters.                     |
 | [simplifying_confident_learning_tutorial.ipynb](https://github.com/cleanlab/examples/blob/master/simplifying_confident_learning_tutorial.ipynb) | Implement `cleanlab` as raw numpy code.                                                                                |
 | [visualizing_confident_learning.ipynb](https://github.com/cleanlab/examples/blob/master/visualizing_confident_learning.ipynb)                   | Demonstrate how `cleanlab` performs noise matrix estimation.                                                           |
 
 ## Instructions
 
 To run the latest example notebooks, execute the commands below which will install the required libraries in a virtual environment.
+
+To run the examples with your own version of cleanlab, simply edit the first line of requirements.txt, or delete it and install cleanlab separately.
 
 ```console
 python -m pip install virtualenv
@@ -33,15 +35,9 @@ Bash script:
 ./run_all_notebooks.sh
 ```
 
-Python script:
+## Older Examples
 
-```console
-python run_all_notebooks.py
-```
-
-## Old Examples
-
-See the `contrib` folder for examples from v1 of `cleanlab`.
+See the `contrib` folder for examples from v1 of `cleanlab` which may be helpful for reproducing results from the [Confident Learning paper](https://arxiv.org/abs/1911.00068).
 
 ## License
 
