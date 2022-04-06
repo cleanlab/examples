@@ -9,42 +9,34 @@ import click
     "--root_dir",
     "-d",
     default="./",
-    help="Root directory to find and run all Jupyter notebooks.",
+    help="Root directory to run all Jupyter notebooks.",
 )
-@click.option(
-    "--ignore_sub_dirs",
-    "-i",
-    default=["env"],
-    multiple=True,
-    help="Ignore these sub directories when traversing the root directory. Can pass multiple args.",
-)
-def main(root_dir, ignore_sub_dirs):
+def main(root_dir):
     """Traverse root directory and run all Jupyter notebooks"""
 
     print("-----------------------------------------------------------------")
     print(f"Executing all Jupyter notebooks in root directory: {root_dir}")
     print("-----------------------------------------------------------------")
 
-    # traverse root directory
-    for root, dirs, files in os.walk(root_dir):
-        for file in files:
-            if file.endswith(".ipynb"):
+    # list of notebooks for latest examples
+    notebooks = [
+        "iris_simple_example.ipynb",
+        "classifier_comparison.ipynb",
+        "model_selection_demo.ipynb",
+        "simplifying_confident_learning_tutorial.ipynb",
+        "visualizing_confident_learning.ipynb",
+    ]
 
-                # path to Jupyter notebook
-                notebook_path = Path(os.path.join(root, file))
+    for notebook in notebooks:
 
-                # execute notebooks
-                if not (
-                    notebook_path.parts[0]
-                    in ignore_sub_dirs  # ignore notebook if it is in the list of sub directories
-                ):
+        notebook_path = f"{root_dir}{notebook}"
 
-                    # execute notebook with papermill
-                    print(f"Executing Jupyter notebook: {notebook_path}")
-                    pm.execute_notebook(
-                        input_path=notebook_path,
-                        output_path=notebook_path,
-                    )
+        # execute notebook with papermill
+        print(f"Executing Jupyter notebook: {notebook_path}")
+        pm.execute_notebook(
+            input_path=notebook_path,
+            output_path=notebook_path,
+        )
 
 
 if __name__ == "__main__":
