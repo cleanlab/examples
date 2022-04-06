@@ -1,4 +1,4 @@
-git+https://github.com/cgnorthcutt/cleanlab.git@master
+git+https://github.com/cleanlab/cleanlab.git@master
 ipython==8.2.0
 matplotlib==3.5.1
 numpy==1.22.3
