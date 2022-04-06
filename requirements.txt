@@ -9,8 +9,6 @@ scikit_learn==1.0.2
 scipy==1.8.0
 seaborn==0.11.2
 statsmodels==0.13.2
-# torch==1.10.1+cu113
-# torchvision==0.11.2+cu113
 papermill
 click
 ipykernel

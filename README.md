@@ -28,7 +28,7 @@ Recommended order of examples to try:
 
 ## Instructions
 
-To run the latest example scripts and notebooks, execute the commands below which will install the required libraries in a virtual environment.
+To run the latest example notebooks, execute the commands below which will install the required libraries in a virtual environment.
 
 ```console
 python3 -m pip install virtualenv
