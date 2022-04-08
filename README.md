@@ -6,14 +6,15 @@ This repo contains code examples that demonstrate how to use [cleanlab](https://
 
 Recommended order of examples to try:
 
-| Example | Notebook / Folder                             | Description                                                                                                                                                                                                                                                                    |
-| ------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1       | iris_simple_example.ipynb                     | Use `cleanlab` to find synthetic label errors in the Iris dataset.                                                                                                                                                                                                             |
-| 2       | classifier_comparison.ipynb                   | Demonstrate how `cleanlab` can be used to train 10 different classifiers on 4 dataset distributions with label errors.                                                                                                                                                         |
-| 3       | model_selection_demo.ipynb                    | Perform hyperparameter optimization to find the best settings of `cleanlab`'s optional parameters.                                                                                                                                                                             |
-| 4       | simplifying_confident_learning_tutorial.ipynb | Implement `cleanlab` as raw numpy code.                                                                                                                                                                                                                                        |
-| 5       | visualizing_confident_learning.ipynb          | Demonstrate how `cleanlab` performs noise matrix estimation.                                                                                                                                                                                                                   |
-| 6       | cifar10-cnn-coteaching                        | Demonstrate the use of two experimental modules from `cleanlab`: [cifar_cnn.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) and [coteaching.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py) |
+|     | Notebook / Folder                             | Description                                                                                                                                                                                                                                                                    |
+| --- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | iris_simple_example.ipynb                     | Use `cleanlab` to find synthetic label errors in the Iris dataset.                                                                                                                                                                                                             |
+| 2   | classifier_comparison.ipynb                   | Demonstrate how `cleanlab` can be used to train 10 different classifiers on 4 dataset distributions with label errors.                                                                                                                                                         |
+| 3   | model_selection_demo.ipynb                    | Perform hyperparameter optimization to find the best settings of `cleanlab`'s optional parameters.                                                                                                                                                                             |
+| 4   | simplifying_confident_learning_tutorial.ipynb | Implement `cleanlab` as raw numpy code.                                                                                                                                                                                                                                        |
+| 5   | visualizing_confident_learning.ipynb          | Demonstrate how `cleanlab` performs noise matrix estimation.                                                                                                                                                                                                                   |
+| 6   | cifar10-cnn-coteaching                        | Demonstrate the use of two experimental modules from `cleanlab`: [cifar_cnn.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) and [coteaching.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py) |
+| 7   | mnist-cnn                                     | Demonstrate the use of the following experimental module from `cleanlab`: [mnist_pytorch.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/mnist_pytorch.py)                                                                                          |
 
 ## Instructions
 
@@ -36,7 +37,7 @@ Bash script:
 ./run_all_notebooks.sh
 ```
 
-For example 6, please follow the instructions in the readme of the folder.
+For examples 6-7, please follow the instructions in the `README` of each folder.
 
 ## Older Examples
 

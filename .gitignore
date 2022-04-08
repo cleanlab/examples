@@ -1,5 +1,6 @@
 env/
 temp/
 output/
+data/
 .ipynb_checkpoints/
 cifar10-cnn-coteaching/data/
