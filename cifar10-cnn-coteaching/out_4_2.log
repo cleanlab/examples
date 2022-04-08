@@ -1,0 +1,152 @@
+Use GPU: 1 for training
+Train size: 37627
+cifar10_train_crossval.py:286: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn(
+cifar10_train_crossval.py:295: UserWarning: You have chosen a specific GPU. This will completely disable data parallelism.
+  warnings.warn(
+Epoch [1/10], Iter [50/293] Training Accuracy1: 46.8750, Training Accuracy2: 49.2188, Loss1: 0.0131, Loss2: 0.0134 
+Epoch [1/10], Iter [100/293] Training Accuracy1: 42.1875, Training Accuracy2: 39.0625, Loss1: 0.0132, Loss2: 0.0136 
+Epoch [1/10], Iter [150/293] Training Accuracy1: 39.0625, Training Accuracy2: 36.7188, Loss1: 0.0129, Loss2: 0.0130 
+Epoch [1/10], Iter [200/293] Training Accuracy1: 56.2500, Training Accuracy2: 56.2500, Loss1: 0.0100, Loss2: 0.0104 
+Epoch [1/10], Iter [250/293] Training Accuracy1: 54.6875, Training Accuracy2: 54.6875, Loss1: 0.0098, Loss2: 0.0101 
+Evaluating Co-Teaching Model
+/media/johnson/johnson-hdd-11/cleanlab/open-source/reproduce-cifar10-examples/env/lib/python3.8/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Epoch [1/10] Test Accuracy on the 10000 test images: Model1 53.5700 % Model2 53.7000 %
+Test: [0/79]	Time 0.344 (0.344)	Loss 1.2224 (1.2224)	Acc@1 52.344 (52.344)	Acc@5 93.750 (93.750)
+Test: [50/79]	Time 0.013 (0.032)	Loss 0.9977 (1.3500)	Acc@1 69.531 (48.238)	Acc@5 93.750 (95.435)
+ * Acc@1 53.520 Acc@5 94.300
+Model 2:
+Test: [0/79]	Time 0.349 (0.349)	Loss 0.9023 (0.9023)	Acc@1 63.281 (63.281)	Acc@5 98.438 (98.438)
+Test: [50/79]	Time 0.012 (0.032)	Loss 1.0457 (1.4357)	Acc@1 74.219 (46.952)	Acc@5 92.188 (94.072)
+ * Acc@1 53.670 Acc@5 93.330
+Epoch [2/10], Iter [50/293] Training Accuracy1: 49.2188, Training Accuracy2: 56.2500, Loss1: 0.0106, Loss2: 0.0093 
+Epoch [2/10], Iter [100/293] Training Accuracy1: 52.3438, Training Accuracy2: 51.5625, Loss1: 0.0104, Loss2: 0.0101 
+Epoch [2/10], Iter [150/293] Training Accuracy1: 61.7188, Training Accuracy2: 66.4062, Loss1: 0.0088, Loss2: 0.0078 
+Epoch [2/10], Iter [200/293] Training Accuracy1: 57.0312, Training Accuracy2: 56.2500, Loss1: 0.0092, Loss2: 0.0090 
+Epoch [2/10], Iter [250/293] Training Accuracy1: 60.9375, Training Accuracy2: 66.4062, Loss1: 0.0083, Loss2: 0.0080 
+Evaluating Co-Teaching Model
+Epoch [2/10] Test Accuracy on the 10000 test images: Model1 63.9700 % Model2 61.6600 %
+Test: [0/79]	Time 0.357 (0.357)	Loss 0.7869 (0.7869)	Acc@1 72.656 (72.656)	Acc@5 96.875 (96.875)
+Test: [50/79]	Time 0.012 (0.031)	Loss 0.6902 (1.1737)	Acc@1 77.344 (58.287)	Acc@5 96.875 (96.553)
+ * Acc@1 63.570 Acc@5 96.550
+Model 2:
+Test: [0/79]	Time 0.393 (0.393)	Loss 0.7737 (0.7737)	Acc@1 73.438 (73.438)	Acc@5 96.094 (96.094)
+Test: [50/79]	Time 0.027 (0.033)	Loss 0.8371 (1.2679)	Acc@1 74.219 (55.699)	Acc@5 92.969 (95.297)
+ * Acc@1 61.030 Acc@5 95.610
+Epoch [3/10], Iter [50/293] Training Accuracy1: 67.9688, Training Accuracy2: 60.1562, Loss1: 0.0071, Loss2: 0.0076 
+Epoch [3/10], Iter [100/293] Training Accuracy1: 74.2188, Training Accuracy2: 71.0938, Loss1: 0.0062, Loss2: 0.0061 
+Epoch [3/10], Iter [150/293] Training Accuracy1: 67.1875, Training Accuracy2: 67.1875, Loss1: 0.0061, Loss2: 0.0062 
+Epoch [3/10], Iter [200/293] Training Accuracy1: 64.0625, Training Accuracy2: 71.8750, Loss1: 0.0065, Loss2: 0.0058 
+Epoch [3/10], Iter [250/293] Training Accuracy1: 71.0938, Training Accuracy2: 69.5312, Loss1: 0.0056, Loss2: 0.0055 
+Evaluating Co-Teaching Model
+Epoch [3/10] Test Accuracy on the 10000 test images: Model1 66.7700 % Model2 66.0500 %
+Test: [0/79]	Time 0.320 (0.320)	Loss 1.2045 (1.2045)	Acc@1 57.031 (57.031)	Acc@5 96.094 (96.094)
+Test: [50/79]	Time 0.012 (0.030)	Loss 0.2766 (1.0782)	Acc@1 92.969 (62.944)	Acc@5 100.000 (97.304)
+ * Acc@1 66.490 Acc@5 97.300
+Model 2:
+Test: [0/79]	Time 0.328 (0.328)	Loss 1.0494 (1.0494)	Acc@1 59.375 (59.375)	Acc@5 97.656 (97.656)
+Test: [50/79]	Time 0.052 (0.031)	Loss 0.3991 (1.0897)	Acc@1 86.719 (61.964)	Acc@5 97.656 (97.120)
+ * Acc@1 65.410 Acc@5 97.060
+Epoch [4/10], Iter [50/293] Training Accuracy1: 71.0938, Training Accuracy2: 71.0938, Loss1: 0.0060, Loss2: 0.0067 
+Epoch [4/10], Iter [100/293] Training Accuracy1: 69.5312, Training Accuracy2: 69.5312, Loss1: 0.0070, Loss2: 0.0063 
+Epoch [4/10], Iter [150/293] Training Accuracy1: 70.3125, Training Accuracy2: 75.0000, Loss1: 0.0058, Loss2: 0.0056 
+Epoch [4/10], Iter [200/293] Training Accuracy1: 70.3125, Training Accuracy2: 73.4375, Loss1: 0.0050, Loss2: 0.0048 
+Epoch [4/10], Iter [250/293] Training Accuracy1: 71.0938, Training Accuracy2: 70.3125, Loss1: 0.0066, Loss2: 0.0060 
+Evaluating Co-Teaching Model
+Epoch [4/10] Test Accuracy on the 10000 test images: Model1 70.1600 % Model2 71.2900 %
+Test: [0/79]	Time 0.350 (0.350)	Loss 0.9962 (0.9962)	Acc@1 67.969 (67.969)	Acc@5 96.094 (96.094)
+Test: [50/79]	Time 0.013 (0.032)	Loss 1.0579 (1.0881)	Acc@1 64.062 (65.288)	Acc@5 96.875 (96.952)
+ * Acc@1 70.080 Acc@5 97.500
+Model 2:
+Test: [0/79]	Time 0.344 (0.344)	Loss 1.0293 (1.0293)	Acc@1 65.625 (65.625)	Acc@5 95.312 (95.312)
+Test: [50/79]	Time 0.033 (0.032)	Loss 0.6958 (1.0537)	Acc@1 78.906 (66.437)	Acc@5 97.656 (96.967)
+ * Acc@1 71.280 Acc@5 97.460
+Epoch [5/10], Iter [50/293] Training Accuracy1: 74.2188, Training Accuracy2: 73.4375, Loss1: 0.0039, Loss2: 0.0044 
+Epoch [5/10], Iter [100/293] Training Accuracy1: 70.3125, Training Accuracy2: 69.5312, Loss1: 0.0052, Loss2: 0.0061 
+Epoch [5/10], Iter [150/293] Training Accuracy1: 75.7812, Training Accuracy2: 69.5312, Loss1: 0.0045, Loss2: 0.0050 
+Epoch [5/10], Iter [200/293] Training Accuracy1: 75.0000, Training Accuracy2: 79.6875, Loss1: 0.0041, Loss2: 0.0031 
+Epoch [5/10], Iter [250/293] Training Accuracy1: 77.3438, Training Accuracy2: 78.1250, Loss1: 0.0039, Loss2: 0.0042 
+Evaluating Co-Teaching Model
+Epoch [5/10] Test Accuracy on the 10000 test images: Model1 74.9700 % Model2 74.4900 %
+Test: [0/79]	Time 0.354 (0.354)	Loss 1.1391 (1.1391)	Acc@1 64.062 (64.062)	Acc@5 96.875 (96.875)
+Test: [50/79]	Time 0.034 (0.033)	Loss 0.3807 (0.9731)	Acc@1 89.062 (70.190)	Acc@5 99.219 (97.564)
+ * Acc@1 74.730 Acc@5 97.810
+Model 2:
+Test: [0/79]	Time 0.360 (0.360)	Loss 1.0582 (1.0582)	Acc@1 61.719 (61.719)	Acc@5 96.094 (96.094)
+Test: [50/79]	Time 0.012 (0.032)	Loss 0.4280 (0.9893)	Acc@1 84.375 (69.210)	Acc@5 98.438 (97.763)
+ * Acc@1 74.700 Acc@5 98.030
+Epoch [6/10], Iter [50/293] Training Accuracy1: 75.7812, Training Accuracy2: 72.6562, Loss1: 0.0031, Loss2: 0.0037 
+Epoch [6/10], Iter [100/293] Training Accuracy1: 82.0312, Training Accuracy2: 78.1250, Loss1: 0.0028, Loss2: 0.0030 
+Epoch [6/10], Iter [150/293] Training Accuracy1: 73.4375, Training Accuracy2: 74.2188, Loss1: 0.0041, Loss2: 0.0049 
+Epoch [6/10], Iter [200/293] Training Accuracy1: 77.3438, Training Accuracy2: 76.5625, Loss1: 0.0033, Loss2: 0.0033 
+Epoch [6/10], Iter [250/293] Training Accuracy1: 77.3438, Training Accuracy2: 74.2188, Loss1: 0.0036, Loss2: 0.0041 
+Evaluating Co-Teaching Model
+Epoch [6/10] Test Accuracy on the 10000 test images: Model1 76.9900 % Model2 76.4700 %
+Test: [0/79]	Time 0.321 (0.321)	Loss 0.6283 (0.6283)	Acc@1 80.469 (80.469)	Acc@5 98.438 (98.438)
+Test: [50/79]	Time 0.017 (0.031)	Loss 0.2714 (0.9324)	Acc@1 90.625 (73.009)	Acc@5 99.219 (98.039)
+ * Acc@1 76.930 Acc@5 98.180
+Model 2:
+Test: [0/79]	Time 0.347 (0.347)	Loss 0.6366 (0.6366)	Acc@1 79.688 (79.688)	Acc@5 98.438 (98.438)
+Test: [50/79]	Time 0.013 (0.031)	Loss 0.4076 (0.9428)	Acc@1 85.938 (72.702)	Acc@5 99.219 (97.595)
+ * Acc@1 76.200 Acc@5 97.900
+Epoch [7/10], Iter [50/293] Training Accuracy1: 83.5938, Training Accuracy2: 78.9062, Loss1: 0.0026, Loss2: 0.0026 
+Epoch [7/10], Iter [100/293] Training Accuracy1: 78.1250, Training Accuracy2: 81.2500, Loss1: 0.0030, Loss2: 0.0028 
+Epoch [7/10], Iter [150/293] Training Accuracy1: 78.9062, Training Accuracy2: 77.3438, Loss1: 0.0026, Loss2: 0.0032 
+Epoch [7/10], Iter [200/293] Training Accuracy1: 78.9062, Training Accuracy2: 81.2500, Loss1: 0.0026, Loss2: 0.0028 
+Epoch [7/10], Iter [250/293] Training Accuracy1: 77.3438, Training Accuracy2: 76.5625, Loss1: 0.0030, Loss2: 0.0030 
+Evaluating Co-Teaching Model
+Epoch [7/10] Test Accuracy on the 10000 test images: Model1 78.1600 % Model2 78.4900 %
+Test: [0/79]	Time 0.342 (0.342)	Loss 0.4496 (0.4496)	Acc@1 85.156 (85.156)	Acc@5 99.219 (99.219)
+Test: [50/79]	Time 0.012 (0.031)	Loss 0.3924 (0.8883)	Acc@1 88.281 (74.418)	Acc@5 100.000 (98.575)
+ * Acc@1 77.910 Acc@5 98.620
+Model 2:
+Test: [0/79]	Time 0.297 (0.297)	Loss 0.6591 (0.6591)	Acc@1 76.562 (76.562)	Acc@5 97.656 (97.656)
+Test: [50/79]	Time 0.040 (0.031)	Loss 0.2849 (0.8763)	Acc@1 91.406 (74.632)	Acc@5 100.000 (98.162)
+ * Acc@1 78.300 Acc@5 98.410
+Epoch [8/10], Iter [50/293] Training Accuracy1: 78.1250, Training Accuracy2: 79.6875, Loss1: 0.0024, Loss2: 0.0023 
+Epoch [8/10], Iter [100/293] Training Accuracy1: 76.5625, Training Accuracy2: 75.0000, Loss1: 0.0026, Loss2: 0.0028 
+Epoch [8/10], Iter [150/293] Training Accuracy1: 77.3438, Training Accuracy2: 76.5625, Loss1: 0.0028, Loss2: 0.0026 
+Epoch [8/10], Iter [200/293] Training Accuracy1: 85.9375, Training Accuracy2: 85.1562, Loss1: 0.0015, Loss2: 0.0017 
+Epoch [8/10], Iter [250/293] Training Accuracy1: 86.7188, Training Accuracy2: 85.9375, Loss1: 0.0016, Loss2: 0.0017 
+Evaluating Co-Teaching Model
+Epoch [8/10] Test Accuracy on the 10000 test images: Model1 78.7200 % Model2 77.8200 %
+Test: [0/79]	Time 0.355 (0.355)	Loss 0.7255 (0.7255)	Acc@1 78.906 (78.906)	Acc@5 99.219 (99.219)
+Test: [50/79]	Time 0.036 (0.032)	Loss 0.3165 (1.0056)	Acc@1 89.062 (73.085)	Acc@5 100.000 (97.718)
+ * Acc@1 78.460 Acc@5 98.180
+Model 2:
+Test: [0/79]	Time 0.341 (0.341)	Loss 0.4626 (0.4626)	Acc@1 85.938 (85.938)	Acc@5 97.656 (97.656)
+Test: [50/79]	Time 0.050 (0.032)	Loss 0.4514 (0.9978)	Acc@1 87.500 (74.249)	Acc@5 100.000 (97.472)
+ * Acc@1 77.910 Acc@5 97.950
+Epoch [9/10], Iter [50/293] Training Accuracy1: 82.0312, Training Accuracy2: 79.6875, Loss1: 0.0015, Loss2: 0.0021 
+Epoch [9/10], Iter [100/293] Training Accuracy1: 78.1250, Training Accuracy2: 75.7812, Loss1: 0.0025, Loss2: 0.0020 
+Epoch [9/10], Iter [150/293] Training Accuracy1: 81.2500, Training Accuracy2: 76.5625, Loss1: 0.0026, Loss2: 0.0035 
+Epoch [9/10], Iter [200/293] Training Accuracy1: 81.2500, Training Accuracy2: 78.1250, Loss1: 0.0016, Loss2: 0.0026 
+Epoch [9/10], Iter [250/293] Training Accuracy1: 82.8125, Training Accuracy2: 78.1250, Loss1: 0.0011, Loss2: 0.0016 
+Evaluating Co-Teaching Model
+Epoch [9/10] Test Accuracy on the 10000 test images: Model1 79.5700 % Model2 79.0500 %
+Test: [0/79]	Time 0.306 (0.306)	Loss 0.5435 (0.5435)	Acc@1 81.250 (81.250)	Acc@5 99.219 (99.219)
+Test: [50/79]	Time 0.012 (0.031)	Loss 0.3928 (0.8638)	Acc@1 89.844 (76.976)	Acc@5 99.219 (98.483)
+ * Acc@1 79.060 Acc@5 98.580
+Model 2:
+Test: [0/79]	Time 0.352 (0.352)	Loss 0.4578 (0.4578)	Acc@1 82.812 (82.812)	Acc@5 98.438 (98.438)
+Test: [50/79]	Time 0.013 (0.031)	Loss 0.4086 (0.9470)	Acc@1 88.281 (75.888)	Acc@5 100.000 (98.055)
+ * Acc@1 78.990 Acc@5 98.380
+Epoch [10/10], Iter [50/293] Training Accuracy1: 75.7812, Training Accuracy2: 78.1250, Loss1: 0.0022, Loss2: 0.0018 
+Epoch [10/10], Iter [100/293] Training Accuracy1: 74.2188, Training Accuracy2: 78.1250, Loss1: 0.0025, Loss2: 0.0021 
+Epoch [10/10], Iter [150/293] Training Accuracy1: 82.0312, Training Accuracy2: 79.6875, Loss1: 0.0015, Loss2: 0.0020 
+Epoch [10/10], Iter [200/293] Training Accuracy1: 84.3750, Training Accuracy2: 85.9375, Loss1: 0.0014, Loss2: 0.0014 
+Epoch [10/10], Iter [250/293] Training Accuracy1: 75.7812, Training Accuracy2: 78.9062, Loss1: 0.0028, Loss2: 0.0027 
+Evaluating Co-Teaching Model
+Epoch [10/10] Test Accuracy on the 10000 test images: Model1 79.0800 % Model2 79.3500 %
+Test: [0/79]	Time 0.365 (0.365)	Loss 0.7728 (0.7728)	Acc@1 81.250 (81.250)	Acc@5 96.875 (96.875)
+Test: [50/79]	Time 0.014 (0.031)	Loss 0.2289 (1.0767)	Acc@1 92.969 (74.770)	Acc@5 100.000 (98.177)
+ * Acc@1 78.970 Acc@5 98.300
+Model 2:
+Test: [0/79]	Time 0.415 (0.415)	Loss 1.1262 (1.1262)	Acc@1 72.656 (72.656)	Acc@5 97.656 (97.656)
+Test: [50/79]	Time 0.020 (0.033)	Loss 0.1787 (0.9963)	Acc@1 92.969 (75.858)	Acc@5 100.000 (98.575)
+ * Acc@1 79.000 Acc@5 98.530
+
+real	5m43.379s
+user	13m28.584s
+sys	1m45.229s

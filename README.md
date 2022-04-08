@@ -6,13 +6,14 @@ This repo contains code examples that demonstrate how to use [cleanlab](https://
 
 Recommended order of examples to try:
 
-| Notebook                                                                                                                                        | Description                                                                                                            |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [iris_simple_example.ipynb](https://github.com/cleanlab/examples/blob/master/iris_simple_example.ipynb)                                         | Use `cleanlab` to find synthetic label errors in the Iris dataset.                                                     |
-| [classifier_comparison.ipynb](https://github.com/cleanlab/examples/blob/master/classifier_comparison.ipynb)                                     | Demonstrate how `cleanlab` can be used to train 10 different classifiers on 4 dataset distributions with label errors. |
-| [model_selection_demo.ipynb](https://github.com/cleanlab/examples/blob/master/model_selection_demo.ipynb)                                       | Perform hyperparameter optimization to find the best settings of `cleanlab`'s optional parameters.                     |
-| [simplifying_confident_learning_tutorial.ipynb](https://github.com/cleanlab/examples/blob/master/simplifying_confident_learning_tutorial.ipynb) | Implement `cleanlab` as raw numpy code.                                                                                |
-| [visualizing_confident_learning.ipynb](https://github.com/cleanlab/examples/blob/master/visualizing_confident_learning.ipynb)                   | Demonstrate how `cleanlab` performs noise matrix estimation.                                                           |
+| Example | Notebook                                                                                                                                        | Description                                                                                                                                                                                                                                                                  |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1       | [iris_simple_example.ipynb](https://github.com/cleanlab/examples/blob/master/iris_simple_example.ipynb)                                         | Use `cleanlab` to find synthetic label errors in the Iris dataset.                                                                                                                                                                                                           |
+| 2       | [classifier_comparison.ipynb](https://github.com/cleanlab/examples/blob/master/classifier_comparison.ipynb)                                     | Demonstrate how `cleanlab` can be used to train 10 different classifiers on 4 dataset distributions with label errors.                                                                                                                                                       |
+| 3       | [model_selection_demo.ipynb](https://github.com/cleanlab/examples/blob/master/model_selection_demo.ipynb)                                       | Perform hyperparameter optimization to find the best settings of `cleanlab`'s optional parameters.                                                                                                                                                                           |
+| 4       | [simplifying_confident_learning_tutorial.ipynb](https://github.com/cleanlab/examples/blob/master/simplifying_confident_learning_tutorial.ipynb) | Implement `cleanlab` as raw numpy code.                                                                                                                                                                                                                                      |
+| 5       | [visualizing_confident_learning.ipynb](https://github.com/cleanlab/examples/blob/master/visualizing_confident_learning.ipynb)                   | Demonstrate how `cleanlab` performs noise matrix estimation.                                                                                                                                                                                                                 |
+| 6       | [cifar10-cnn-coteaching](https://github.com/cleanlab/examples/cifar10-cnn-coteaching)                                                           | Demonstrate the use of two experimental modules from Cleanlab: [cifar_cnn.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) and [coteaching.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py) |
 
 ## Instructions
 
@@ -24,16 +25,18 @@ To run the examples with your own version of cleanlab, simply edit the first lin
 python -m pip install virtualenv
 python -m venv env
 source env/bin/activate
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt -f https://download.pytorch.org/whl/cu113/torch_stable.html
 ```
 
-Run the notebooks individually or run the bash script below which will execute and save each notebook.
+For examples 1-5, you may run the notebooks individually or run the bash script below which will execute and save each notebook.
 
 Bash script:
 
 ```console
 ./run_all_notebooks.sh
 ```
+
+For example 6, please follow the instructions in the readme of the folder.
 
 ## Older Examples
 
