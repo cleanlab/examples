@@ -17,7 +17,7 @@ The following will be saved in the `data` folder:
 
 - [CIFAR-10 train and test images](https://github.com/cgnorthcutt/confidentlearning-reproduce/tree/master/cifar10/dataset) (png files)
 - [Noisy labels](https://github.com/cgnorthcutt/confidentlearning-reproduce/raw/master/cifar10/cifar10_noisy_labels/cifar10_noisy_labels__frac_zero_noise_rates__0.4__noise_amount__0.2.json) (json file)
-  - [20% Noise | 40% Sparsity](https://github.com/cgnorthcutt/confidentlearning-reproduce) as defined in the [Confident Learning](https://github.com/cgnorthcutt/confidentlearning-reproduce) paper
+  - [20% Noise | 40% Sparsity](https://github.com/cgnorthcutt/confidentlearning-reproduce) as defined in the [Confident Learning](https://arxiv.org/pdf/1911.00068.pdf) paper
 - [True labels](https://github.com/cleanlab/examples/raw/master/cifar10/cifar10_true_uncorrupted_labels.npy) (npy file)
 - [Pre-computed predicted probabilities from cross-validation](https://github.com/cgnorthcutt/confidentlearning-reproduce/raw/master/cifar10/cifar10_noisy_labels__frac_zero_noise_rates__0_4__noise_amount__0_2/cifar10__train__model_resnet50__pyx.npy) (npy file)
 - [Pre-computed noisy label mask for training dataset](https://github.com/cgnorthcutt/confidentlearning-reproduce/raw/master/cifar10/confidentlearning_and_coteaching/results/4_2/train_pruned_conf_joint_only/train_mask.npy) (npy file)
