@@ -15,6 +15,7 @@ Recommended order of examples to try:
 | 5   | visualizing_confident_learning.ipynb          | Demonstrate how `cleanlab` performs noise matrix estimation.                                                                                                                                                                                                                   |
 | 6   | cifar10-cnn-coteaching                        | Demonstrate the use of two experimental modules from `cleanlab`: [cifar_cnn.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) and [coteaching.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py) |
 | 7   | mnist-cnn                                     | Demonstrate the use of the following experimental module from `cleanlab`: [mnist_pytorch.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/mnist_pytorch.py)                                                                                          |
+| 8   | amazon-reviews-fasttext                       | Demonstrate the use of the following experimental module from `cleanlab`: [fasttext.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/fasttext.py)                                                                                                    |
 
 ## Instructions
 
@@ -37,7 +38,7 @@ Bash script:
 ./run_all_notebooks.sh
 ```
 
-For examples 6-7, please follow the instructions in the `README` of each folder.
+For examples 6-8, please follow the instructions in the `README` of each folder.
 
 ## Older Examples
 
