@@ -329,6 +329,11 @@ def main_worker(gpu, ngpus_per_node, args):
             "Either args.cvn > 0 or dir-train-mask not None, but not both."
         )
 
+    if args.coteaching and (args.epochs < args.num_gradual):
+        raise ValueError(
+            "Number of epochs cannot be less than num_gradual for coteaching."
+        )
+
     if args.gpu is not None:
         print("Use GPU: {} for training".format(args.gpu))
 
