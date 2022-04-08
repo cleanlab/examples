@@ -1,4 +1,4 @@
-# Training a Pytorch CNN model to find label errors in MNIST
+# Training a PyTorch CNN model to find label errors in MNIST
 
 This example demonstrates the use of the following experimental module below from Cleanlab:
 
