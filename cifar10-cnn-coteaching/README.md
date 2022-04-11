@@ -1,6 +1,6 @@
 # Learning with noisy labels on CIFAR-10
 
-This example demonstrates the use of two experimental modules below from Cleanlab:
+This example demonstrates the use of two experimental modules below from cleanlab:
 
 - [cleanlab.experimental.cifar_cnn.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py)
 - [cleanlab.experimental.coteaching.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py)
@@ -14,7 +14,7 @@ The code and data for this example are taken from the repo below:
 Run bash script below to download all the data.
 
 ```console
-./download_data.sh
+$ ./download_data.sh
 ```
 
 The following will be saved in the `data` folder:
@@ -32,7 +32,7 @@ This script stores the output in a log file (`out_4_2.log`) so we can see the re
 
 ```console
 # run Confident Learning training with Co-Teaching on labels with 20% label noise
-{ time python3 cifar10_train_crossval.py \
+$ { time python3 cifar10_train_crossval.py \
 	--coteaching \
     	--seed 1 \
 	--batch-size 128 \
