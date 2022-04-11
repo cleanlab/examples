@@ -32,7 +32,7 @@ This script stores the output in a log file (`out_4_2.log`) so we can see the re
 
 ```console
 # run Confident Learning training with Co-Teaching on labels with 20% label noise
-$ { time python3 cifar10_train_crossval.py \
+{ time python3 cifar10_train_crossval.py \
 	--coteaching \
     	--seed 1 \
 	--batch-size 128 \
