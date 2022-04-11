@@ -4,7 +4,7 @@ This example demonstrates the use of the following experimental module below fro
 
 - [cleanlab.experimental.mnist_pytorch.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/mnist_pytorch.py)
 
-The code is adapted from `cleanlab` v1 examples (see `contrib/v1` folder).
+The code is adapted from cleanlab v1 examples (see `contrib/v1` folder).
 
 ## Instructions
 
