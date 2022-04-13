@@ -35,7 +35,7 @@ For examples 1-5, you may run the notebooks individually or run the bash script 
 Bash script:
 
 ```console
-$ ./run_all_notebooks.sh
+./run_all_notebooks.sh
 ```
 
 For examples 6-8, please follow the instructions in the `README` of each folder.

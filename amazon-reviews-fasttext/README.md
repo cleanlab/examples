@@ -11,7 +11,7 @@ The code is adapted from cleanlab v1 examples (see `contrib/v1` folder).
 Run bash script below to download all the data.
 
 ```console
-$ ./download_data.sh
+./download_data.sh
 ```
 
 Start Jupyter Lab and run the notebook: `amazon_pyx.ipynb`
