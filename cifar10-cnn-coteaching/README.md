@@ -11,10 +11,16 @@ The code and data for this example are taken from the repo below:
 
 ## Instructions
 
+Install PyTorch with CUDA. If needed, change the CUDA version in the `cuda_requirements.txt` file and the link below.
+
+```console
+$ pip install -r cuda_requirements.txt -f https://download.pytorch.org/whl/cu113/torch_stable.html
+```
+
 Run bash script below to download all the data.
 
 ```console
-./download_data.sh
+$ ./download_data.sh
 ```
 
 The following will be saved in the `data` folder:

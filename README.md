@@ -27,7 +27,7 @@ To run the examples with your own version of cleanlab, simply edit the first lin
 python -m pip install virtualenv
 python -m venv env
 source env/bin/activate
-python -m pip install -r requirements.txt -f https://download.pytorch.org/whl/cu113/torch_stable.html
+python -m pip install -r requirements.txt
 ```
 
 For examples 1-5, you may run the notebooks individually or run the bash script below which will execute and save each notebook.
