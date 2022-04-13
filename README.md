@@ -2,6 +2,8 @@
 
 This repo contains code examples that demonstrate how to use [cleanlab](https://github.com/cleanlab) and how [confident learning](https://arxiv.org/abs/1911.00068) works to find label errors.
 
+To quickly learn the basics of running cleanlab on your own data, we recommend first starting [here](https://docs.cleanlab.ai/v1.0.1/index.html#quickstart) before diving into the examples below.
+
 ## Latest Examples
 
 Recommended order of examples to try:
