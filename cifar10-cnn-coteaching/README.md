@@ -1,6 +1,6 @@
 # Learning with noisy labels on CIFAR-10
 
-This example demonstrates the use of two experimental modules below from Cleanlab:
+This example demonstrates the use of two experimental modules below from cleanlab:
 
 - [cleanlab.experimental.cifar_cnn.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py)
 - [cleanlab.experimental.coteaching.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py)
