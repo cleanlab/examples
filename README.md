@@ -4,7 +4,7 @@ This repo contains code examples that demonstrate how to use [cleanlab](https://
 
 To quickly learn the basics of running cleanlab on your own data, we recommend first starting [here](https://docs.cleanlab.ai/v1.0.1/index.html#quickstart) before diving into the examples below.
 
-## Latest Examples
+## Table of Contents
 
 Recommended order of examples to try:
 
@@ -37,7 +37,7 @@ For examples 1-5, you may run the notebooks individually or run the bash script 
 Bash script:
 
 ```console
-$ ./run_all_notebooks.sh
+$ bash ./run_all_notebooks.sh
 ```
 
 For examples 6-8, please follow the instructions in the `README` of each folder.

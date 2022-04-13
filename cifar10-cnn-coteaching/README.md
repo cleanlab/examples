@@ -20,7 +20,7 @@ $ pip install -r cuda_requirements.txt -f https://download.pytorch.org/whl/cu113
 Run bash script below to download all the data.
 
 ```console
-$ ./download_data.sh
+$ bash ./download_data.sh
 ```
 
 The following will be saved in the `data` folder:
