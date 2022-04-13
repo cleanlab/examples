@@ -1,4 +1,4 @@
-# `cleanlab` Examples
+# cleanlab Examples
 
 This repo contains code examples that demonstrate how to use [cleanlab](https://github.com/cleanlab) and how [confident learning](https://arxiv.org/abs/1911.00068) works to find label errors.
 
