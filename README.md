@@ -24,10 +24,10 @@ To run the latest example notebooks, execute the commands below which will insta
 To run the examples with your own version of cleanlab, simply edit the first line of requirements.txt, or delete it and install cleanlab separately.
 
 ```console
-python -m pip install virtualenv
-python -m venv env
-source env/bin/activate
-python -m pip install -r requirements.txt
+$ python -m pip install virtualenv
+$ python -m venv env
+$ source env/bin/activate
+$ python -m pip install -r requirements.txt
 ```
 
 For examples 1-5, you may run the notebooks individually or run the bash script below which will execute and save each notebook.
@@ -35,7 +35,7 @@ For examples 1-5, you may run the notebooks individually or run the bash script 
 Bash script:
 
 ```console
-./run_all_notebooks.sh
+$ ./run_all_notebooks.sh
 ```
 
 For examples 6-8, please follow the instructions in the `README` of each folder.
