@@ -21,7 +21,7 @@ Recommended order of examples to try:
 
 To run the latest example notebooks, execute the commands below which will install the required libraries in a virtual environment.
 
-To run the examples with your own version of cleanlab, simply edit the first line of requirements.txt, or delete it and install cleanlab separately.
+It is recommended to run the examples with the latest stable cleanlab release. See `requirements.txt` file.
 
 ```console
 $ python -m pip install virtualenv
