@@ -24,6 +24,7 @@ def cross_val_predict_autogluon_image_dataset(
     ngpus_per_trial: int = 1,
     time_limit: int = 7200,
     random_state: int = 123,
+    verbose: int = 0,
 ) -> Tuple:
     """Run stratified K-folds cross-validation with AutoGluon image model.
 
@@ -84,7 +85,7 @@ def cross_val_predict_autogluon_image_dataset(
             hyperparameters=model_params,
             time_limit=time_limit,
             random_state=random_state,
-        )
+        );
 
         # predict on test indices in this split
 
@@ -146,7 +147,7 @@ def _save_to_pickle(object, pickle_file_name):
         pickle.dump(object, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
-def train_model(model_type, data, model_results_folder, *, num_cv_folds=5, verbose=1, epochs=1, holdout_frac=0.2, time_limit=60, random_state=123):
+def train_model(model_type, data, model_results_folder, *, num_cv_folds=5, verbose=0, epochs=1, holdout_frac=0.2, time_limit=60, random_state=123):
     """Trains AutoGluon image model with stratified K-folds cross-validation and saves data in model_results_folder.
 
     Parameters
@@ -197,6 +198,7 @@ def train_model(model_type, data, model_results_folder, *, num_cv_folds=5, verbo
             model_params=MODEL_PARAMS,
             time_limit=time_limit,
             random_state=random_state,
+            verbose=verbose,
         )
 
 # load pickle file util
