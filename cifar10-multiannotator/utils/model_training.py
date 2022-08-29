@@ -1,3 +1,5 @@
+""" Helper methods to train AutoML model for image classification. """
+
 import sys
 
 sys.path.insert(0, "../")
