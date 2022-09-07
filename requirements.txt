@@ -1,11 +1,11 @@
 cleanlab
-ipython==8.2.0
+ipykernel==6.15.2
 matplotlib==3.5.1
 numpy==1.22.3
 pandas==1.4.1
-pickle5
-Pillow==9.0.1
+papermill==2.4.0
 scikit_learn==1.0.2
+<<<<<<< HEAD
 scipy==1.8.0
 seaborn==0.11.2
 statsmodels==0.13.2
@@ -17,6 +17,3 @@ ipywidgets
 widgetsnbextension
 black[jupyter]
 autogluon==0.5.2
-tqdm>=4.64.0
-transformers==4.22.0.dev0
-annoy
