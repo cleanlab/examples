@@ -18,6 +18,8 @@ Recommended order of examples to try:
 | 6   | [cifar10-cnn-coteaching](cifar10-cnn-coteaching)                                               | Demonstrate the use of two experimental modules from cleanlab: [cifar_cnn.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) and [coteaching.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py) |
 | 7   | [mnist-cnn](mnist-cnn)                                                                         | Demonstrate the use of the following experimental module from cleanlab: [mnist_pytorch.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/mnist_pytorch.py)                                                                                          |
 | 8   | [amazon-reviews-fasttext](amazon-reviews-fasttext)                                             | Demonstrate the use of the following experimental module from cleanlab: [fasttext.py](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/fasttext.py)                                                                                                    |
+| 9   | [outlier-detection-cifar10](outlier-detection-cifar10)                                             | Training neural network for image classification and using it to detect out-of-distribution images.                                                                                                 |
+
 
 ## Instructions
 
