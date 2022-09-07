@@ -1,0 +1,5 @@
+cleanlab
+matplotlib==3.5.1
+numpy==1.21.6
+scikit_learn==1.0.2
+scipy==1.7.3
