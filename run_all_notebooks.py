@@ -22,8 +22,8 @@ def main(root_dir):
     notebooks = [
         "iris_simple_example.ipynb",
         "classifier_comparison.ipynb",
-        "model_selection_demo.ipynb",
-        "simplifying_confident_learning_tutorial.ipynb",
+        "hyperparameter_optimization.ipynb",
+        "simplifying_confident_learning.ipynb",
         "visualizing_confident_learning.ipynb",
     ]
 

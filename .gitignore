@@ -3,4 +3,5 @@ temp/
 output/
 data/
 .ipynb_checkpoints/
+.python-version
 cifar10-cnn-coteaching/data/

@@ -16,3 +16,4 @@ jupyterlab
 ipywidgets 
 widgetsnbextension
 black[jupyter]
+autogluon==0.5.2
