@@ -1,3 +1,5 @@
+""" Helper functions for training image classification models with AutoGluon and using cross-validation. """
+
 import sys
 
 sys.path.insert(0, "../")
