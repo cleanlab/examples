@@ -1,8 +1,13 @@
 cleanlab
+autogluon==0.5.2
 ipykernel==6.15.2
+jupyterlab
 matplotlib==3.5.1
-numpy==1.22.3
+numpy==1.21.6
 pandas==1.4.1
 papermill==2.4.0
 scikit_learn==1.0.2
-scipy==1.8.0
+scipy==1.7.3
+six==1.16.0
+statsmodels==0.13.2
+black[jupyter]
