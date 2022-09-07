@@ -16,6 +16,8 @@ To quickly learn the basics of running cleanlab on your own data, we recommend f
 | 6   | [cifar10-cnn-coteaching](cifar10-cnn-coteaching)                                               | Train a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) on noisily labeled Cifar10 image data using cleanlab with [coteaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py) |
 | 7   | [mnist-cnn](mnist-cnn)                                                                         | Finding label errors in MNIST image data with a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/mnist_pytorch.py)                                                                                          |
 | 8   | [amazon-reviews-fasttext](amazon-reviews-fasttext)                                             | Demonstrate use of a cleanlab-compatible  [FastText model](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/fasttext.py)                                                                                                    |
+| 9   | [outlier-detection-cifar10](outlier-detection-cifar10)                                             | Train AutoML for image classification and use it to detect out-of-distribution images.                                                                                                 |
+
 
 ## Instructions
 
