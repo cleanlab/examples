@@ -16,14 +16,13 @@ To quickly learn the basics of running cleanlab on your own data, we recommend f
 | 6   | [cifar10-cnn-coteaching](cifar10-cnn-coteaching)                                               | Train a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) on noisily labeled Cifar10 image data using cleanlab with [coteaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py) |
 | 7   | [mnist-cnn](mnist-cnn)                                                                         | Finding label errors in MNIST image data with a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/mnist_pytorch.py)                                                                                          |
 | 8   | [amazon-reviews-fasttext](amazon-reviews-fasttext)                                             | Demonstrate use of a cleanlab-compatible  [FastText model](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/fasttext.py)                                                                                                    |
-| 9   | [outlier-detection-cifar10](outlier-detection-cifar10)                                             | Train AutoML for image classification and use it to detect out-of-distribution images.                                                                                                 |
-
+| 9   | [outlier-detection-cifar10](outlier-detection-cifar10/outlier_detection.ipynb)                                             | Train AutoML for image classification and use it to detect out-of-distribution images.                                                                                                 |
+| 10  | [cifar10-multiannotator](cifar10-multiannotator/multiannotator_labels.ipynb)                                             | Iteratively improve consensus labels and trained classifier from data labeled by mulitple annotators.                                                            |
+| 11  | [entity_recognition](entity_recognition/entity_recognition_training.ipynb)                                             | Train Transformer model  for Named Entity Recognition and produce out-of-sample pred_probs for cleanlab.token_classification                                          |
 
 ## Instructions
 
 To run the latest example notebooks, execute the commands below which will install the required libraries in a virtual environment.
-
-It is recommended to run the examples with the latest stable cleanlab release. See `requirements.txt` file.
 
 ```console
 $ python -m pip install virtualenv
@@ -32,7 +31,10 @@ $ source env/bin/activate
 $ python -m pip install -r requirements.txt
 ```
 
-For examples 1-5, you may run the notebooks individually or run the bash script below which will execute and save each notebook.
+It is recommended to run the examples with the latest stable cleanlab release (`pip install cleanlab`). 
+But be aware some very-recently added examples may only be compatible with the master branch of cleanlab. 
+
+You may run the notebooks individually or run the bash script below which will execute and save each notebook (for examples: 1-5, 9-10).
 
 Bash script:
 
@@ -40,9 +42,9 @@ Bash script:
 $ bash ./run_all_notebooks.sh
 ```
 
-For examples 6-8, please follow the instructions in the `README` of each folder.
+### Older Examples
 
-## Older Examples
+For running older versions of cleanlab, you can look at the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository to see the corresponding older versions of the example notebooks. 
 
 See the `contrib` folder for examples from v1 of cleanlab which may be helpful for reproducing results from the [Confident Learning paper](https://arxiv.org/abs/1911.00068).
 
