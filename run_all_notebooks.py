@@ -26,6 +26,7 @@ def main(root_dir):
         "simplifying_confident_learning.ipynb",
         "visualizing_confident_learning.ipynb",
         "outlier-detection-cifar10/outlier_detection.ipynb",
+        "cifar10-multiannotator/multiannotator_labels.ipynb",
     ]
 
     for notebook in notebooks:
