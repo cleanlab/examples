@@ -1,4 +1,4 @@
-cleanlab
+cleanlab # Some examples may require you to instead install latest developer version of cleanlab from github: pip install git+https://github.com/cleanlab/cleanlab.git
 annoy==1.17.1
 autogluon==0.5.2
 ipykernel==6.15.2

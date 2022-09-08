@@ -43,6 +43,8 @@ Bash script:
 $ bash ./run_all_notebooks.sh
 ```
 
+Instead of installing the requirements for all examples simultaneously via `pip install -r requirements.txt`, you can also install only the requirements for a particular example by executing this command inside of the corresponding folder. This will require that you have installed cleanlab (`pip install cleanlab`), and some examples may require you to have the latest developer version of cleanlab from github (`pip install git+https://github.com/cleanlab/cleanlab.git`).
+
 ### Older Examples
 
 For running older versions of cleanlab, you can look at the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository to see the corresponding older versions of the example notebooks. 
