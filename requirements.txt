@@ -5,6 +5,7 @@ ipykernel==6.15.2
 ipywidgets==8.0.2
 jupyterlab
 matplotlib==3.5.1
+nltk==3.7
 numpy==1.21.6
 pandas==1.4.1
 papermill==2.4.0

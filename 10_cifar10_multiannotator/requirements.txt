@@ -1,5 +1,6 @@
 autogluon==0.5.2
+ipywidgets==8.0.2
 matplotlib==3.5.1
 numpy==1.21.6 
 pandas==1.4.1
-sklearn==1.0.2
+scikit_learn==1.0.2

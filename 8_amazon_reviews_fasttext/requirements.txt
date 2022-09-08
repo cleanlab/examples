@@ -1,3 +1,2 @@
-cleanlab
 numpy==1.21.6
 scikit_learn==1.0.2
