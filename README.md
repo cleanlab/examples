@@ -18,7 +18,7 @@ To quickly learn the basics of running cleanlab on your own data, we recommend f
 | 8   | [amazon-reviews-fasttext](amazon-reviews-fasttext)                                             | Demonstrate use of a cleanlab-compatible  [FastText model](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/fasttext.py)                                                                                                    |
 | 9   | [outlier-detection-cifar10](outlier-detection-cifar10/outlier_detection.ipynb)                                             | Train AutoML for image classification and use it to detect out-of-distribution images.                                                                                                 |
 | 10  | [cifar10-multiannotator](cifar10-multiannotator/multiannotator_labels.ipynb)                                             | Iteratively improve consensus labels and trained classifier from data labeled by mulitple annotators.                                                            |
-| 11  | [entity_recognition](entity_recognition/entity_recognition_training.ipynb)                                             | Train Transformer model  for Named Entity Recognition and produce out-of-sample pred_probs for cleanlab.token_classification                                          |
+| 11  | [entity_recognition](entity_recognition/entity_recognition_training.ipynb)                                             | Train Transformer model  for Named Entity Recognition and produce out-of-sample `pred_probs` for cleanlab.token_classification.                                          |
 
 ## Instructions
 
