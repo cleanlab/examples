@@ -25,6 +25,7 @@ def main(root_dir):
         "hyperparameter_optimization.ipynb",
         "simplifying_confident_learning.ipynb",
         "visualizing_confident_learning.ipynb",
+        "outlier-detection-cifar10/outlier_detection.ipynb",
     ]
 
     for notebook in notebooks:
