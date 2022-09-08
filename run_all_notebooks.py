@@ -29,6 +29,7 @@ def main(root_dir):
         "7_mnist_cnn",
         "8_amazon_reviews_fasttext",
         "11_entity_recognition",
+
     ]
 
     folders = [
