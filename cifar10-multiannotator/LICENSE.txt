@@ -1,0 +1,23 @@
+CIFAR-10H (also referred to as CIFAR10H) is an accompanying human
+label dataset for the 10,000-image test set of CIFAR-10,
+originally created as a new benchmark for object classification:
+
+    Peterson, J.*, Battleday, R.*, Griffiths, T., & Russakovsky, O. (2019). 
+    Human uncertainty makes classification more robust.
+    In Proceedings of the IEEE International Conference on Computer Vision.
+    * equal contribution
+    
+It is the joint creation of Joshua C. Peterson and Ruairidh M. Battleday,
+under the advisorship of Thomas L. Griffiths and Olga Russakovsky.
+
+The CIFAR-10H dataset (including any metadata, scripts, and
+documentation) is made available under Creative Commons BY-NC-SA 4.0 license.
+You can use, redistribute, and adapt it for non-commercial purposes, 
+as long as you (a) give appropriate credit by citing our paper, 
+(b) indicate any changes that you've made, and
+(c) distribute any derivative works under the same license.
+
+    https://creativecommons.org/licenses/by-nc-sa/4.0/
+    
+The CIFAR-10 image and original label data can be found at:
+https://www.cs.toronto.edu/~kriz/cifar.html
