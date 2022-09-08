@@ -16,5 +16,5 @@ This document provides a checklist as a guide to contributing to the cleanlab ex
     
     2. add the dependency specifications in the main `requirements.txt` file, ensuring that the new dependencies do not conflict with the existing ones
 
-- Add the notebook to the [Table of Contents](https://github.com/cleanlab/examples#table-of-contents))
- table in the README
+- Add the notebook to the [Table of Contents](https://github.com/cleanlab/examples#table-of-contents)
+ table in the README, ensuring that the folder prefix number matches the index of the table
