@@ -18,27 +18,35 @@ def main(root_dir):
     print(f"Executing all Jupyter notebooks in root directory: {root_dir}")
     print("-----------------------------------------------------------------")
 
-    # list of notebooks for latest examples
-    notebooks = [
-        "iris_simple_example.ipynb",
-        "classifier_comparison.ipynb",
-        "hyperparameter_optimization.ipynb",
-        "simplifying_confident_learning.ipynb",
-        "visualizing_confident_learning.ipynb",
-        "outlier-detection-cifar10/outlier_detection.ipynb",
-        "cifar10-multiannotator/multiannotator_labels.ipynb",
+    # list of notebook folders to ignore
+    ignore_folders = [
+        # ignoring checkpoints, git folders and v1 notebooks
+        ".ipynb_checkpoints",
+        ".git",
+        "contrib",
+        # insert notebooks to ignore below
+        "6_cifar10_cnn_coteaching",
+        "7_mnist_cnn",
+        "8_amazon_reviews_fasttext",
+        "11_entity_recognition",
+
     ]
 
-    for notebook in notebooks:
+    folders = [
+        f for f in filter(os.path.isdir, os.listdir("./")) if f not in ignore_folders
+    ]
 
-        notebook_path = f"{root_dir}{notebook}"
+    for folder in folders:
+        for file in os.listdir(folder):
+            if file.endswith(".ipynb"):
+                notebook_path = os.path.join(root_dir, folder, file)
 
-        # execute notebook with papermill
-        print(f"Executing Jupyter notebook: {notebook_path}")
-        pm.execute_notebook(
-            input_path=notebook_path,
-            output_path=notebook_path,
-        )
+                # execute notebook with papermill
+                print(f"Executing Jupyter notebook: {notebook_path}")
+                pm.execute_notebook(
+                    input_path=notebook_path,
+                    output_path=notebook_path,
+                )
 
 
 if __name__ == "__main__":

@@ -2,6 +2,11 @@ env/
 temp/
 output/
 data/
+__pycache__/
 .ipynb_checkpoints/
 .python-version
 cifar10-cnn-coteaching/data/
+10_cifar10_multiannotator/cifar10_test/
+10_cifar10_multiannotator/experiment/
+10_cifar10_multiannotator/cifar10_test.tar.gz
+11_entity_recognition/conll2003.zip
