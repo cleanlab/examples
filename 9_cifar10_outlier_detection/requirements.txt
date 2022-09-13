@@ -1,0 +1,6 @@
+annoy==1.17.1
+autogluon==0.5.2
+matplotlib==3.5.1
+numpy==1.21.6
+pandas==1.4.1
+scikit_learn==1.0.2
