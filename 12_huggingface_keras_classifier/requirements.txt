@@ -1,0 +1,6 @@
+ipywidgets==8.0.2
+numpy>=1.22.0
+scikit_learn==1.0.2
+tensorflow==2.9.2 # for Macs with Apple silicon : tensorflow-macos==2.9.2 and tensorflow-metal==0.5.1
+tensorflow-datasets==4.6.0
+transformers
