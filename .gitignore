@@ -5,6 +5,7 @@ data/
 __pycache__/
 .ipynb_checkpoints/
 .python-version
+tensorflow_datasets/
 cnn_coteaching_cifar10/data/
 multiannotator_cifar10/cifar10_test/
 multiannotator_cifar10/experiment/
