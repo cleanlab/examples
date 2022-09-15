@@ -19,7 +19,7 @@ To quickly learn the basics of running cleanlab on your own data, we recommend f
 | 9   | [outlier_detection_cifar10](9_cifar10_outlier_detection/outlier_detection.ipynb)                                             | Train AutoML for image classification and use it to detect out-of-distribution images.                                                                                                 |
 | 10  | [cifar10_multiannotator](10_cifar10_multiannotator/multiannotator_labels.ipynb)                                             | Iteratively improve consensus labels and trained classifier from data labeled by mulitple annotators.                                                            |
 | 11  | [entity_recognition](11_entity_recognition/entity_recognition_training.ipynb)                                             | Train Transformer model  for Named Entity Recognition and produce out-of-sample `pred_probs` for cleanlab.token_classification.  
-| 12  | [huggingface_keras_classifier](12_huggingface_keras_classifier/huggingface_keras_classifier.ipynb)                                             | Train cleanlab-compatible Keras model with pretrained bert layer for finding label issues using `CleanLearning`.    
+| 12  | [huggingface_keras_imdb](huggingface_keras_imdb/huggingface_keras_imdb.ipynb)                                             |  CleanLearning for text classification with Keras Model + pretrained BERT backbone and Tensorflow Dataset.    
 
 
 ## Instructions
