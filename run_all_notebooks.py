@@ -27,8 +27,9 @@ def main(root_dir):
         # insert notebooks to ignore below
         "cnn_coteaching_cifar10",
         "cnn_mnist",
-        "fasttext_amazon_review",
+        "fasttext_amazon_reviews",
         "entity_recognition",
+        "outlier_detection_cifar10",  # requires GPU
     ]
 
     folders = [
