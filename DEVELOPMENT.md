@@ -2,7 +2,7 @@
 
 This guide provides a checklist for contributing new cleanlab examples.
 
-- Add your example's notebook and any relevant files in a folder, prefixing the name of the folder with a number (use the next number from the [Table of Contents](https://github.com/cleanlab/examples#table-of-contents))
+- Add your example's notebook and any relevant files in a folder
 
 - Ensure that the notebook contains cell outputs and that they look as expected in Jupyter notebook and **on GitHub**. Note this is different than our tutorials in the main cleanlab repository (where notebook cells should not be executed)! Unlike the tutorials, we want examples notebooks to also look good in GitHub's viewer (which has limited rendering functionality, so avoid things like \<div\> that GitHub's viewer does not render properly). 
 
@@ -17,4 +17,4 @@ This guide provides a checklist for contributing new cleanlab examples.
     2. add the dependency specifications in the main `requirements.txt` file, ensuring that the new dependencies do not conflict with the existing ones
 
 - Add the notebook to the [Table of Contents](https://github.com/cleanlab/examples#table-of-contents)
- table in the README, ensuring that the folder prefix number matches the index of the table
+ table in the README, ideally grouping the newly added example with any other related examples

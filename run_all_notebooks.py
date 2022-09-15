@@ -25,11 +25,10 @@ def main(root_dir):
         ".git",
         "contrib",
         # insert notebooks to ignore below
-        "6_cifar10_cnn_coteaching",
-        "7_mnist_cnn",
-        "8_amazon_reviews_fasttext",
-        "11_entity_recognition",
-
+        "cnn_coteaching_cifar10",
+        "cnn_mnist",
+        "fasttext_amazon_review",
+        "entity_recognition",
     ]
 
     folders = [
