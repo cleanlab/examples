@@ -14,10 +14,8 @@ scikit_learn==1.0.2
 scipy==1.7.3
 six==1.16.0
 statsmodels==0.13.2
-# tensorflow==2.9.2 # for Macs with Apple silicon : tensorflow-macos==2.9.2 and tensorflow-metal==0.5.1
-tensorflow-macos==2.9.2 
-tensorflow-metal==0.5.1
+tensorflow==2.9.2 # for Macs with Apple silicon : tensorflow-macos==2.9.2 and tensorflow-metal==0.5.1
 tensorflow-datasets==4.6.0
 tqdm>=4.64.0
-transformers
+transformers==4.22.0.dev0
 black[jupyter]
