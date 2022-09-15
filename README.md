@@ -19,7 +19,7 @@ To quickly learn the basics of running cleanlab on your own data, we recommend f
 | 9   | [outlier_detection_cifar10](outlier_detection_cifar10/outlier_detection_cifar10.ipynb)                                             | Train AutoML for image classification and use it to detect out-of-distribution images.                                                                                                 |
 | 10  | [entity_recognition](entity_recognition/entity_recognition_training.ipynb)                                             | Train Transformer model  for Named Entity Recognition and produce out-of-sample `pred_probs` for cleanlab.token_classification.      |
 | 11  | [cnn_coteaching_cifar10](cnn_coteaching_cifar10)                                               | Train a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) on noisily labeled Cifar10 image data using cleanlab with [coteaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py) 
-|
+
 
 
 ## Instructions
