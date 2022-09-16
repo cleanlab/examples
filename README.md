@@ -36,7 +36,7 @@ $ python -m pip install -r requirements.txt
 It is recommended to run the examples with the latest stable cleanlab release (`pip install cleanlab`). 
 However be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence some very-recently added examples may require you to instead install the master branch of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`).
 
-You may run the notebooks individually or run the bash script below which will execute and save each notebook (for examples: 1-5, 8-9).
+You may run the notebooks individually or run the bash script below which will execute and save each notebook (for examples: 1-7).
 
 Bash script:
 

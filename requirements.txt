@@ -10,8 +10,10 @@ numpy==1.22.0
 pandas==1.4.1
 papermill==2.4.0
 Pillow==9.0.1
+pytorch-transformers==1.2.0
 scikit_learn==1.0.2
 scipy==1.7.3
+seqeval==1.2.2
 six==1.16.0
 statsmodels==0.13.2
 tensorflow==2.9.2 # for Macs with Apple silicon : tensorflow-macos==2.9.2 and tensorflow-metal==0.5.1
