@@ -25,11 +25,11 @@ def main(root_dir):
         ".git",
         "contrib",
         # insert notebooks to ignore below
-        "cnn_coteaching_cifar10",
-        "cnn_mnist",
-        "fasttext_amazon_reviews",
-        "entity_recognition",
+        "fasttext_amazon_reviews",  # takes very long to run
+        "multiannotator_cifar10",  # requires GPU
         "outlier_detection_cifar10",  # requires GPU
+        "entity_recognition",  # requires GPU, does not use cleanlab
+        "cnn_coteaching_cifar10",  # no ipynb, only a py file
     ]
 
     folders = [

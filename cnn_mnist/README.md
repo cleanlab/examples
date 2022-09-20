@@ -8,10 +8,10 @@ The code is adapted from cleanlab v1 examples (see `contrib/v1` folder).
 
 ## Instructions
 
-Install PyTorch with CUDA. If needed, change the CUDA version in the `cuda_requirements.txt` file and the link below.
+Install PyTorch with CUDA. If needed, change the CUDA version in the `requirements.txt` file and the link below.
 
 ```console
-$ pip install -r cuda_requirements.txt -f https://download.pytorch.org/whl/cu113/torch_stable.html
+$ pip install -r requirements.txt -f https://download.pytorch.org/whl/cu113/torch_stable.html
 ```
 
 Start Jupyter Lab and run the notebook: `label_errors_mnist_train_cnn.ipynb`
