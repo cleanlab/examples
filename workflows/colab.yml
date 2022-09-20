@@ -1,0 +1,25 @@
+name: colab
+on: 
+  push:
+    branches:
+      - master
+jobs:
+  badges:
+    name: Colab Badge
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v2
+      - name: Add/Update badges
+        id: badges
+        uses: trsvchn/colab-badge-action@v4
+        with:
+          check: all
+          target_branch: master
+          target_repository: cleanlab/examples
+          update: true
+      - name: Commit & push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: add Colab badge
