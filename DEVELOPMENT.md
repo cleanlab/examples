@@ -8,6 +8,13 @@ This guide provides a checklist for contributing new cleanlab examples.
 
 - Ensure that the jupyter notebook cells are executed in order. Additionally clear any cell blocks that are too large (eg. model training code that specifies accuracy for each epoch), it is ok if these do not have an execution number after being cleared.
 
+- The second cell of the notebook (right after the `<h1>` title block, and right before the text introduction of the notebook) should be a markdown block containing the text:
+    ```
+    {{ badge }}
+    ``` 
+    This will allow our CI workflow to create a badge that will link to a Google Colab version of the notebook.
+
+
 - If the notebook takes a long time to run or is hard to auto-execute, add its folder name to the `ignore_folders` list in [run_all_notebooks.py](run_all_notebooks.py)
 
 - When adding a new example, use `pip freeze` to determine the package versions that are used, then
