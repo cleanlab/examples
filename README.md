@@ -28,17 +28,21 @@ To run the latest example notebooks, execute the commands below which will insta
 
 ```console
 $ python -m pip install virtualenv
-$ python -m venv env
-$ source env/bin/activate
+$ python -m venv cleanlab-examples # creates a new venv named cleanlab-examples
+$ source cleanlab-examples/bin/activate
 $ python -m pip install -r requirements.txt
 ```
 
 It is recommended to run the examples with the latest stable cleanlab release (`pip install cleanlab`). 
 However be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence some very-recently added examples may require you to instead install the master branch of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`).
 
-You may run the notebooks individually or run the bash script below which will execute and save each notebook (for examples: 1-7).
+You may run the notebooks individually or run the bash script below which will execute and save each notebook (for examples: 1-7). Note that before executing the script to run all notebooks for the first time you will need to create a jupyter kernel named `cleanlab-examples` using
 
-Bash script:
+```console
+$ python -m ipykernel install --user --name=cleanlab-examples
+```
+
+Bash script to run all notebooks:
 
 ```console
 $ bash ./run_all_notebooks.sh
