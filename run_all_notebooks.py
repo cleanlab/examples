@@ -46,6 +46,7 @@ def main(root_dir):
                 pm.execute_notebook(
                     input_path=notebook_path,
                     output_path=notebook_path,
+                    kernel_name="cleanlab-examples",
                 )
 
 
