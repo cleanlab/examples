@@ -5,3 +5,4 @@ torch==1.12.1+cu113
 timm==0.6.7
 pandas==1.5.0
 torchvision==0.13.1+cu102
+gdown==4.5.3
