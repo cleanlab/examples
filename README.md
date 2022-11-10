@@ -33,8 +33,13 @@ $ source cleanlab-examples/bin/activate
 $ python -m pip install -r requirements.txt
 ```
 
+Alternatively you can only install those dependencies required for a specific example by calling `pip install -r requirements.txt` inside the subfolder for that example (each example's subfolder contains a separate `requirements.txt` file).
+
 It is recommended to run the examples with the latest stable cleanlab release (`pip install cleanlab`). 
-However be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence some very-recently added examples may require you to instead install the master branch of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`).
+However be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence some very-recently added examples may require you to instead install the developer version of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`). 
+To see the examples corresponding to specific version of cleanlab, check out the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository (e.g. the examples for cleanlab v2.1.0 are [here](https://github.com/cleanlab/examples/tree/v2.1.0)).
+
+### Running all examples
 
 You may run the notebooks individually or run the bash script below which will execute and save each notebook (for examples: 1-7). Note that before executing the script to run all notebooks for the first time you will need to create a jupyter kernel named `cleanlab-examples`. Be sure that you have already created and activated the virtual environment (steps provided above) before running the following command to create the jupyter kernel.
 
@@ -48,11 +53,9 @@ Bash script to run all notebooks:
 $ bash ./run_all_notebooks.sh
 ```
 
-Instead of installing the requirements for *all* examples simultaneously via `pip install -r requirements.txt`, you can alternatively install only the requirements for *one* particular example by executing this same command inside of the corresponding folder. This will require that you have installed cleanlab (`pip install cleanlab`), and some examples may require you to have the latest developer version of cleanlab from github (`pip install git+https://github.com/cleanlab/cleanlab.git`).
-
 ### Older Examples
 
-For running older versions of cleanlab, you can look at the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository to see the corresponding older versions of the example notebooks. 
+For running older versions of cleanlab, look at the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository to see the corresponding older versions of the example notebooks (e.g. the examples for cleanlab v2.0.0 are [here](https://github.com/cleanlab/examples/tree/v2.0.0)). 
 
 See the `contrib` folder for examples from v1 of cleanlab which may be helpful for reproducing results from the [Confident Learning paper](https://arxiv.org/abs/1911.00068).
 
