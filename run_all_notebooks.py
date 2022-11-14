@@ -28,6 +28,7 @@ def main(root_dir):
         "fasttext_amazon_reviews",  # takes very long to run
         "multiannotator_cifar10",  # requires GPU
         "outlier_detection_cifar10",  # requires GPU
+        "multilabel_classification",  # requires GPU
         "entity_recognition",  # requires GPU, does not use cleanlab
         "cnn_coteaching_cifar10",  # no ipynb, only a py file
     ]
