@@ -1,6 +1,7 @@
 cleanlab # Some examples may require you to instead install latest developer version of cleanlab from github: pip install git+https://github.com/cleanlab/cleanlab.git
 annoy==1.17.1
 autogluon.vision==0.5.2
+gdown==4.5.3
 ipykernel==6.15.2
 ipywidgets==8.0.2
 jupyterlab
@@ -18,6 +19,8 @@ six==1.16.0
 statsmodels==0.13.2
 tensorflow==2.9.2 # for Macs with Apple silicon : tensorflow-macos==2.9.2 and tensorflow-metal==0.5.1
 tensorflow-datasets==4.6.0
+timm
+torch==1.12.1
 tqdm>=4.64.0
 transformers==4.22.0.dev0
 black[jupyter]

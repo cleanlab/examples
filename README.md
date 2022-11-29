@@ -18,8 +18,9 @@ To quickly learn the basics of running cleanlab on your own data, we recommend f
 | 8   | [fasttext_amazon_reviews](fasttext_amazon_reviews/fasttext_amazon_reviews.ipynb)                         | Finding label errors in Amazon Reviews text dataset using a cleanlab-compatible  [FastText model](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/fasttext.py)                                                                                                    |
 | 9   | [multiannotator_cifar10](multiannotator_cifar10/multiannotator_cifar10.ipynb)                                             | Iteratively improve consensus labels and trained classifier from data labeled by mulitple annotators.                                                            |
 | 10  | [outlier_detection_cifar10](outlier_detection_cifar10/outlier_detection_cifar10.ipynb)                                             | Train AutoML for image classification and use it to detect out-of-distribution images.                                                                                                 |
-| 11  | [entity_recognition](entity_recognition/entity_recognition_training.ipynb)                                             | Train Transformer model  for Named Entity Recognition and produce out-of-sample `pred_probs` for cleanlab.token_classification.      |
-| 12  | [cnn_coteaching_cifar10](cnn_coteaching_cifar10)                                               | Train a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) on noisily labeled Cifar10 image data using cleanlab with [coteaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py).  
+| 11  | [multilabel_classification](multilabel_classification/image_tagging.ipynb)                                               | Find label errors in an image tagging dataset ([CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)) using a [Pytorch model](multilabel_classification/pytorch_network_training.ipynb) you can easily train for multi-label classification. |
+| 12  | [entity_recognition](entity_recognition/entity_recognition_training.ipynb)                                             | Train Transformer model  for Named Entity Recognition and produce out-of-sample `pred_probs` for cleanlab.token_classification.      |
+| 13  | [cnn_coteaching_cifar10](cnn_coteaching_cifar10)                                               | Train a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) on noisily labeled Cifar10 image data using cleanlab with [coteaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py).  |
 
 
 ## Instructions
@@ -28,27 +29,34 @@ To run the latest example notebooks, execute the commands below which will insta
 
 ```console
 $ python -m pip install virtualenv
-$ python -m venv env
-$ source env/bin/activate
+$ python -m venv cleanlab-examples  # creates a new venv named cleanlab-examples
+$ source cleanlab-examples/bin/activate
 $ python -m pip install -r requirements.txt
 ```
 
+Alternatively you can only install those dependencies required for a specific example by calling `pip install -r requirements.txt` inside the subfolder for that example (each example's subfolder contains a separate `requirements.txt` file).
+
 It is recommended to run the examples with the latest stable cleanlab release (`pip install cleanlab`). 
-However be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence some very-recently added examples may require you to instead install the master branch of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`).
+However be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence some very-recently added examples may require you to instead install the developer version of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`). 
+To see the examples corresponding to specific version of cleanlab, check out the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository (e.g. the examples for cleanlab v2.1.0 are [here](https://github.com/cleanlab/examples/tree/v2.1.0)).
 
-You may run the notebooks individually or run the bash script below which will execute and save each notebook (for examples: 1-7).
+### Running all examples
 
-Bash script:
+You may run the notebooks individually or run the bash script below which will execute and save each notebook (for examples: 1-7). Note that before executing the script to run all notebooks for the first time you will need to create a jupyter kernel named `cleanlab-examples`. Be sure that you have already created and activated the virtual environment (steps provided above) before running the following command to create the jupyter kernel.
+
+```console
+$ python -m ipykernel install --user --name=cleanlab-examples
+```
+
+Bash script to run all notebooks:
 
 ```console
 $ bash ./run_all_notebooks.sh
 ```
 
-Instead of installing the requirements for *all* examples simultaneously via `pip install -r requirements.txt`, you can alternatively install only the requirements for *one* particular example by executing this same command inside of the corresponding folder. This will require that you have installed cleanlab (`pip install cleanlab`), and some examples may require you to have the latest developer version of cleanlab from github (`pip install git+https://github.com/cleanlab/cleanlab.git`).
-
 ### Older Examples
 
-For running older versions of cleanlab, you can look at the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository to see the corresponding older versions of the example notebooks. 
+For running older versions of cleanlab, look at the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository to see the corresponding older versions of the example notebooks (e.g. the examples for cleanlab v2.0.0 are [here](https://github.com/cleanlab/examples/tree/v2.0.0)). 
 
 See the `contrib` folder for examples from v1 of cleanlab which may be helpful for reproducing results from the [Confident Learning paper](https://arxiv.org/abs/1911.00068).
 

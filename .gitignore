@@ -18,3 +18,6 @@ outlier_detection_cifar10/cifar10_test.tar.gz
 entity_recognition/folds/
 entity_recognition/conll2003.zip
 entity_recognition/folds/
+contrib/v1/imagenet/img
+contrib/v1/cifar10/img
+contrib/v1/amazon_reviews_dataset/pickles
