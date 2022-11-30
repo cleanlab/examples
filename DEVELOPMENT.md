@@ -32,9 +32,12 @@ This guide provides a checklist for contributing new cleanlab examples.
     
         > Please install the dependencies specified in this requirements.txt file before running the notebook.
 
-        where the requirements.txt text hyperlinks to the `requirements.txt` file located in that specific example's folder (the file created in step 1).
+        where the requirements.txt text hyperlinks to the `requirements.txt` file located in that specific example's folder (the file created in step 1). Be sure to use the GitHub link (instead of relative path) as Google Colab will have no access to other files. 
 
-        For example, if we would hyperlink to this [requirements.txt](find_label_errors_iris/requirements.txt) folder if we were in the [find_label_errors_iris](find_label_errors_iris/find_label_errors_iris.ipynb) notebook.
+        > eg. for the [find_label_errors_iris](find_label_errors_iris/find_label_errors_iris.ipynb) notebook, we would hyperlink the following url:
+        > 
+        > ```https://github.com/cleanlab/examples/blob/master/find_label_errors_iris/requirements.txt```
+
 
 - If the notebook takes a long time to run or is hard to auto-execute, add its folder name to the `ignore_folders` list in [run_all_notebooks.py](run_all_notebooks.py)
 
