@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: cleanlab/nblint-action@ignore-paths
+      - uses: cleanlab/nblint-action@v1
         with:
           ignore_paths: 'contrib'
           check_correct_kernel: true
