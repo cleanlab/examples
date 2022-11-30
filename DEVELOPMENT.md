@@ -10,7 +10,7 @@ This guide provides a checklist for contributing new cleanlab examples.
 
 - The second cell of the notebook (right after the `<h1>` title block, and right before the text introduction of the notebook) should be a markdown block containing the text:
     ```
-    <!--<badge>--><a href=\"https://colab.research.google.com/github/cleanlab/examples/blob/master/{ relative path to notebook }\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a><!--</badge>-->
+    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cleanlab/examples/blob/master/{ relative path to notebook }.ipynb)
     ``` 
 
     and replace the `{ relative path to notebook }` portion with the path to the notebook relative to the root folder. 
@@ -18,7 +18,7 @@ This guide provides a checklist for contributing new cleanlab examples.
     > eg. the [find_label_errors_iris](find_label_errors_iris/find_label_errors_iris.ipynb) notebook will have a relative path of `find_label_errors_iris/find_label_errors_iris.ipynb` and will have the badge
     > 
     > ```
-    > <!--<badge>--><a href=\"https://colab.research.google.com/github/cleanlab/examples/blob/master/find_label_errors_iris/find_label_errors_iris.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a><!--</badge>-->
+    > [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cleanlab/examples/blob/master/find_label_errors_iris/find_label_errors_iris.ipynb.ipynb)
     > ```
 
     This will create a badge that will link to a Google Colab version of the notebook.
