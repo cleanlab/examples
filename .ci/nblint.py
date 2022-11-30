@@ -46,7 +46,10 @@ def check(notebook):
 
 def check_correct_kernel(path, contents):
     if contents["metadata"]["kernelspec"]["display_name"] != "Python 3 (ipykernel)":
-        fail(path, "kernel is incorrect")
+        fail(
+            path,
+            "notebook kernel is incorrect, ensure it is set to 'Python 3 (ipykernel)'",
+        )
 
 
 def check_notebook_badge(path, contents):

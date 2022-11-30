@@ -1,0 +1,18 @@
+name: CI
+on: 
+  push:
+  pull_request:
+jobs:
+  nblint:
+    name: Lint Notebooks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: cleanlab/nblint-action@ignore-paths
+        with:
+          ignore_paths: 'contrib'
+          check_correct_kernel: true
+          check_notebook_badge: true
+          check_outputs_empty: false
+          check_no_trailing_newline: false
+        
