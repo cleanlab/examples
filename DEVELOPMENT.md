@@ -10,18 +10,34 @@ This guide provides a checklist for contributing new cleanlab examples.
 
 - The second cell of the notebook (right after the `<h1>` title block, and right before the text introduction of the notebook) should be a markdown block containing the text:
     ```
-    {{ badge }}
+    <!--<badge>--><a href=\"https://colab.research.google.com/github/cleanlab/examples/blob/master/{ relative path to notebook }\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a><!--</badge>-->
     ``` 
-    This will allow our CI workflow to create a badge that will link to a Google Colab version of the notebook.
 
+    and replace the `{ relative path to notebook }` portion with the path to the notebook relative to the root folder. 
 
-- If the notebook takes a long time to run or is hard to auto-execute, add its folder name to the `ignore_folders` list in [run_all_notebooks.py](run_all_notebooks.py)
+    > eg. the [find_label_errors_iris](find_label_errors_iris/find_label_errors_iris.ipynb) notebook will have a relative path of `find_label_errors_iris/find_label_errors_iris.ipynb` and will have the badge
+    > 
+    > ```
+    > <!--<badge>--><a href=\"https://colab.research.google.com/github/cleanlab/examples/blob/master/find_label_errors_iris/find_label_errors_iris.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a><!--</badge>-->
 
-- When adding a new example, use `pip freeze` to determine the package versions that are used, then
+    This will create a badge that will link to a Google Colab version of the notebook.
+
+- Use `pip freeze` to determine the package versions that are used, then
 
     1. create a `requirements.txt` file in the specific example's folder, and add the notebook's dependency specifications there
     
     2. add the dependency specifications in the main `requirements.txt` file, ensuring that the new dependencies do not conflict with the existing ones
+
+    3. add a markdown block right above the code cell that imports the dependencies that reads:
+    
+        > Please install the dependencies specified in this requirements.txt file before running the notebook.
+
+        where the requirements.txt text hyperlinks to the `requirements.txt` file located in that specific example's folder (the file created in step 1).
+
+        For example, if we would hyperlink to this [requirements.txt](find_label_errors_iris/requirements.txt) folder if we were in the [find_label_errors_iris](find_label_errors_iris/find_label_errors_iris.ipynb) notebook.
+
+- If the notebook takes a long time to run or is hard to auto-execute, add its folder name to the `ignore_folders` list in [run_all_notebooks.py](run_all_notebooks.py)
+
 
 - Add the notebook to the [Table of Contents](https://github.com/cleanlab/examples#table-of-contents)
  table in the README, ideally grouping the newly added example with any other related examples
