@@ -15,7 +15,7 @@ This guide provides a checklist for contributing new cleanlab examples.
 
     Replace the `{ relative path to notebook }` portion with the path to the notebook relative to the root folder. 
 
-    > eg. the [find_label_errors_iris](find_label_errors_iris/find_label_errors_iris.ipynb) notebook will have a relative path of `find_label_errors_iris/find_label_errors_iris.ipynb` and will have the badge
+    > eg. the [find_label_errors_iris](find_label_errors_iris/find_label_errors_iris.ipynb) notebook will have a relative path of `find_label_errors_iris/find_label_errors_iris.ipynb` and will have the badge:
     > 
     > ```
     > [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cleanlab/examples/blob/master/find_label_errors_iris/find_label_errors_iris.ipynb.ipynb)
@@ -25,9 +25,9 @@ This guide provides a checklist for contributing new cleanlab examples.
 
 - Use `pip freeze` to determine the package versions that are used, then
 
-    1. create a `requirements.txt` file in the specific example's folder, and add the notebook's dependency specifications there
+    1. create a `requirements.txt` file in the specific example's folder, and add the notebook's dependency specifications there.
     
-    2. add the dependency specifications in the main `requirements.txt` file, ensuring that the new dependencies do not conflict with the existing ones
+    2. add the dependency specifications in the main `requirements.txt` file, ensuring that the new dependencies do not conflict with the existing ones.
 
     3. add a markdown block right above the code cell that imports the dependencies that reads:
     
