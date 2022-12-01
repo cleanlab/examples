@@ -21,7 +21,9 @@ This guide provides a checklist for contributing new cleanlab examples.
     > [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cleanlab/examples/blob/master/find_label_errors_iris/find_label_errors_iris.ipynb.ipynb)
     > ```
 
-    This will create a badge that will link to a Google Colab version of the notebook.
+    This will create a badge that will link to a Google Colab version of the notebook. 
+    
+    Note that the Colab badge links to the notebook in the master branch, so at the time of making the PR, the link will be invalid. Please remember to check that the Colab link works after the PR has been approved and merged to `master`.
 
 - Use `pip freeze` to determine the package versions that are used, then
 
