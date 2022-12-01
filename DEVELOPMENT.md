@@ -2,9 +2,9 @@
 
 This guide provides a checklist for contributing new cleanlab examples.
 
-- Add your example's notebook and any relevant files in a folder
+- Add your example's notebook and any relevant files in a folder.
 
-- Ensure that the notebook contains cell outputs and that they look as expected in Jupyter notebook and **on GitHub**. Note this is different than our tutorials in the main cleanlab repository (where notebook cells should not be executed)! Unlike the tutorials, we want examples notebooks to also look good in GitHub's viewer (which has limited rendering functionality, so avoid things like \<div\> that GitHub's viewer does not render properly). 
+- Ensure that the notebook contains cell outputs and that they look as expected in Jupyter notebook and **on GitHub**. Note this is different than our tutorials in the main cleanlab repository (where notebook cells should not be executed)! Unlike the tutorials, we want examples notebooks to also look good in GitHub's viewer (which has limited rendering functionality, so avoid things like `<div>` that GitHub's viewer does not render properly). 
 
 - Ensure that the jupyter notebook cells are executed in order. Additionally clear any cell blocks that are too large (eg. model training code that specifies accuracy for each epoch), it is ok if these do not have an execution number after being cleared.
 
@@ -13,7 +13,7 @@ This guide provides a checklist for contributing new cleanlab examples.
     [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cleanlab/examples/blob/master/{ relative path to notebook }.ipynb)
     ``` 
 
-    and replace the `{ relative path to notebook }` portion with the path to the notebook relative to the root folder. 
+    Replace the `{ relative path to notebook }` portion with the path to the notebook relative to the root folder. 
 
     > eg. the [find_label_errors_iris](find_label_errors_iris/find_label_errors_iris.ipynb) notebook will have a relative path of `find_label_errors_iris/find_label_errors_iris.ipynb` and will have the badge
     > 
@@ -41,9 +41,9 @@ This guide provides a checklist for contributing new cleanlab examples.
         > https://github.com/cleanlab/examples/blob/master/find_label_errors_iris/requirements.txt
         > ```
 
-
-- If the notebook takes a long time to run or is hard to auto-execute, add its folder name to the `ignore_folders` list in [run_all_notebooks.py](run_all_notebooks.py)
-
+- If the notebook takes a long time to run or is hard to auto-execute, add its folder name to the `ignore_folders` list in [run_all_notebooks.py](run_all_notebooks.py).
 
 - Add the notebook to the [Table of Contents](https://github.com/cleanlab/examples#table-of-contents)
- table in the README, ideally grouping the newly added example with any other related examples
+ table in the README, ideally grouping the newly added example with any other related examples.
+
+- After a new notebook has been added and pushed to `master` branch, refrain from changing the notebook and folder names, as many links referencing the example notebook will be used throughout cleanlab documentation, blog posts and more.
