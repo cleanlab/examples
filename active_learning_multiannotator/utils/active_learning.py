@@ -2,35 +2,6 @@ import numpy as np
 import pandas as pd
 
 
-def get_idx_to_relabel(
-    active_learning_score,
-    num_examples_to_relabel,
-    active_learning_score_unlabeled=None,
-):
-    if active_learning_score_unlabeled is None:
-        active_learning_score_unlabeled = np.array([])
-
-    num_labeled = len(active_learning_score)
-    active_learning_score_combined = np.concatenate(
-        (active_learning_score, active_learning_score_unlabeled)
-    )
-
-    if num_examples_to_relabel > len(active_learning_score_combined):
-        raise ValueError(
-            "num_examples_to_relabel is larger than the total number of examples available"
-        )
-
-    relabel_idx_combined = np.argsort(active_learning_score_combined)[
-        :num_examples_to_relabel
-    ]
-    relabel_idx = relabel_idx_combined[relabel_idx_combined < num_labeled]
-    relabel_idx_unlabeled = (
-        relabel_idx_combined[relabel_idx_combined >= num_labeled] - num_labeled
-    )
-
-    return relabel_idx, relabel_idx_unlabeled
-
-
 def setup_next_iter_data(
     multiannotator_labels,
     relabel_idx,

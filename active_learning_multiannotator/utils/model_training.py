@@ -10,14 +10,12 @@ from cleanlab.internal.util import (
 )
 
 
-def train_model(
+def fit_predict_proba(
     model,
     X,
     labels,
     cv_n_folds=5,
     X_unlabeled=None,
-    X_test=None,
-    labels_test=None,
 ):
     if X_unlabeled is None:
         X_unlabeled = np.array([])
@@ -28,7 +26,6 @@ def train_model(
     # Initialize pred_probs array
     pred_probs = np.full((len(labels), num_classes), np.NaN)
     pred_probs_unlabeled = np.full((cv_n_folds, len(X_unlabeled), num_classes), np.NaN)
-    model_accuracy = np.full(cv_n_folds, np.NaN)
 
     for k, (cv_train_idx, cv_holdout_idx) in enumerate(kf.split(X=X, y=labels)):
         # fresh untrained copy of the model
@@ -50,13 +47,6 @@ def train_model(
             curr_pred_probs_unlabeled = model_copy.predict_proba(X_unlabeled)
             pred_probs_unlabeled[k] = curr_pred_probs_unlabeled
 
-        # compute test accuracy if test set is provided
-        if X_test is not None and labels_test is not None:
-            curr_model_pred_labels = model_copy.predict(X_test)
-            curr_model_accuracy = np.mean(curr_model_pred_labels == labels_test)
-            model_accuracy[k] = curr_model_accuracy
-
-    model_accuacy = np.mean(np.array(model_accuracy))
     pred_probs_unlabeled = np.mean(np.array(pred_probs_unlabeled), axis=0)
 
-    return pred_probs, pred_probs_unlabeled, model_accuacy
+    return pred_probs, pred_probs_unlabeled
