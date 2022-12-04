@@ -17,6 +17,7 @@ def fit_predict_proba(
     cv_n_folds=5,
     X_unlabeled=None,
 ):
+   """ In your applications, replace this with your code to train model on (X, labels) and produce held-out predictions for X and X_unlabeled. Held-out predictions for X can be produced by training via cross-validation. """
     if X_unlabeled is None:
         X_unlabeled = np.array([])
 

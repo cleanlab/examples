@@ -64,6 +64,7 @@ def setup_next_iter_data(
 
 def add_new_annotator(multiannotator_labels, extra_labels, relabel_idx):
     def get_random_label(annotator_labels):
+        """ Collects more labels for the examples whose indices are specified in `relabel_idx` from a single new annotator, and adds the new labels to dataset. In your applications, these new labels could instead  come from multiple existing annotators, just be sure to update the `multiannotator_labels` appropriately.
         annotator_labels = annotator_labels[~np.isnan(annotator_labels)]
         return np.random.choice(annotator_labels)
 
