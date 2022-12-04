@@ -48,4 +48,4 @@ This guide provides a checklist for contributing new cleanlab examples.
 - Add the notebook to the [Table of Contents](https://github.com/cleanlab/examples#table-of-contents)
  table in the README, ideally grouping the newly added example with any other related examples.
 
-- After a new notebook has been added and pushed to `master` branch, refrain from changing the notebook and folder names, as many links referencing the example notebook will be used throughout cleanlab documentation, blog posts and more.
+- After a new notebook has been added and pushed to `master` branch, AVOID changing the notebook and folder names, as this may  break existing links referencing the example notebook throughout cleanlab documentation, blog posts, and more.
