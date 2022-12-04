@@ -13,6 +13,9 @@ cnn_coteaching_cifar10/data/
 multiannotator_cifar10/cifar10_test/
 multiannotator_cifar10/experiment/
 outlier_detection_cifar10/cifar10_test/
+outlier_detection_cifar10/experiment/
+outlier_detection_cifar10/cifar10_test.tar.gz
+entity_recognition/folds/
 entity_recognition/conll2003.zip
 entity_recognition/folds/
 contrib/v1/imagenet/img
