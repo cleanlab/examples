@@ -1,3 +1,7 @@
+"""
+This file defines the helper functions for the active learning simulation, which include data preperation
+for each round of active learning, and adding new annotators in the demonstration.
+"""
 import numpy as np
 import pandas as pd
 
@@ -13,6 +17,8 @@ def setup_next_iter_data(
     extra_labels=None,
     extra_labels_unlabeled=None,
 ):
+    """Updates inputs after additional labels have been collected in a single active learning round,
+    this ensures that the inputs will be well formatted for the next round of active learning."""
 
     multiannotator_labels = pd.concat(
         (
@@ -63,8 +69,11 @@ def setup_next_iter_data(
 
 
 def add_new_annotator(multiannotator_labels, extra_labels, relabel_idx):
+    """Collects more labels for the examples whose indices are specified in `relabel_idx` from a
+    single new annotator, and adds the new labels to dataset. In your applications, these new labels could instead
+    come from multiple existing annotators, just be sure to update the `multiannotator_labels` appropriately."""
+
     def get_random_label(annotator_labels):
-        """ Collects more labels for the examples whose indices are specified in `relabel_idx` from a single new annotator, and adds the new labels to dataset. In your applications, these new labels could instead  come from multiple existing annotators, just be sure to update the `multiannotator_labels` appropriately.
         annotator_labels = annotator_labels[~np.isnan(annotator_labels)]
         return np.random.choice(annotator_labels)
 
