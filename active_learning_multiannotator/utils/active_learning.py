@@ -1,6 +1,6 @@
 """
-This file defines the helper functions for the active learning simulation, which include data preperation
-for each round of active learning, and adding new annotators in the demonstration.
+This file defines the helper functions for the active learning with multiple annotators simulation, which include data preperation
+for each round of multiannotator active learning, and adding new annotators in the demonstration.
 """
 import numpy as np
 import pandas as pd
@@ -17,8 +17,8 @@ def setup_next_iter_data(
     extra_labels=None,
     extra_labels_unlabeled=None,
 ):
-    """Updates inputs after additional labels have been collected in a single active learning round,
-    this ensures that the inputs will be well formatted for the next round of active learning."""
+    """Updates inputs after additional labels have been collected in a single multiannotator active learning round,
+    this ensures that the inputs will be well formatted for the next round of multiannotator active learning."""
 
     multiannotator_labels = pd.concat(
         (
