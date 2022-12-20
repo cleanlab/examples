@@ -1,5 +1,5 @@
 """
-This file defines the helper functions for the active learning with multiple annotators simulation, which include data preperation
+This file defines the helper functions for the active learning with multiple annotators simulation, which include data preparation
 for each round of multiannotator active learning, and adding new annotators in the demonstration.
 """
 import numpy as np
