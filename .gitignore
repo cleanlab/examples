@@ -7,11 +7,11 @@ __pycache__/
 .ipynb_checkpoints/
 .python-version
 .DS_Store
+*.tar.gz
 tensorflow_datasets/
 cnn_coteaching_cifar10/data/
 multiannotator_cifar10/cifar10_test/
 multiannotator_cifar10/experiment/
-multiannotator_cifar10/cifar10_test.tar.gz
 outlier_detection_cifar10/cifar10_test/
 outlier_detection_cifar10/experiment/
 outlier_detection_cifar10/cifar10_test.tar.gz
