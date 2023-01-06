@@ -63,7 +63,7 @@ See the `contrib` folder for examples from v1 of cleanlab which may be helpful f
 
 ## License
 
-Copyright (c) 2017-2022 Cleanlab Inc.
+Copyright (c) 2017-2023 Cleanlab Inc.
 
 All files listed above and contained in this folder (<https://github.com/cleanlab/examples>) are part of cleanlab.
 
