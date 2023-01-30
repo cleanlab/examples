@@ -43,6 +43,18 @@ This guide provides a checklist for contributing new cleanlab examples.
         > https://github.com/cleanlab/examples/blob/master/find_label_errors_iris/requirements.txt
         > ```
 
+- Ensure that your notebook is using the correct kernel. In jupyter notebook, you can check the notebook's metadata by navigating to `Edit` > `Edit Notebook Metadata` and check if the follow fields match this:
+
+```json
+"kernelspec": {
+    "name": "python3",
+    "display_name": "Python 3 (ipykernel)",
+    "language": "python"
+  }
+```
+
+This is especially important so that papermill can run smoothly.
+
 - If the notebook takes a long time to run or is hard to auto-execute, add its folder name to the `ignore_folders` list in [run_all_notebooks.py](run_all_notebooks.py).
 
 - Add the notebook to the [Table of Contents](https://github.com/cleanlab/examples#table-of-contents)
