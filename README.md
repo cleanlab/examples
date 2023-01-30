@@ -22,6 +22,7 @@ To quickly learn the basics of running cleanlab on your own data, we recommend f
 | 12  | [multilabel_classification](multilabel_classification/image_tagging.ipynb)                                               | Find label errors in an image tagging dataset ([CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)) using a [Pytorch model](multilabel_classification/pytorch_network_training.ipynb) you can easily train for multi-label classification. |
 | 13  | [entity_recognition](entity_recognition/entity_recognition_training.ipynb)                                             | Train Transformer model  for Named Entity Recognition and produce out-of-sample `pred_probs` for **cleanlab.token_classification**.      |
 | 14  | [cnn_coteaching_cifar10](cnn_coteaching_cifar10)                                               | Train a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) on noisily labeled Cifar10 image data using cleanlab with [coteaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py).  |
+| 15 | [find_tabular_errors](find_tabular_errors/find_tabular_errors.ipynb) | Handle mislabeled [tabular data](https://github.com/cleanlab/s/blob/master/student-grades-demo.csv) to improve a XGBoost classifier.
 
 
 ## Instructions
