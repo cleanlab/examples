@@ -1,3 +1,4 @@
+# This notebook currently requires the latest developer version of cleanlab: pip install git+https://github.com/cleanlab/cleanlab.git
 fasttext
 numpy==1.21.6
 scikit_learn==1.0.2

@@ -1,3 +1,4 @@
+# This notebook currently requires the latest developer version of cleanlab: pip install git+https://github.com/cleanlab/cleanlab.git
 ipywidgets==8.0.2
 numpy>=1.22.0
 scikit_learn==1.0.2
