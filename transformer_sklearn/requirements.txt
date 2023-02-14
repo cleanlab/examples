@@ -1,0 +1,4 @@
+# This notebook currently requires the latest developer version of cleanlab: pip install git+https://github.com/cleanlab/cleanlab.git
+ipywidgets==8.0.2
+tensorflow==2.9.2 # for Macs with Apple silicon : tensorflow-macos==2.9.2 and tensorflow-metal==0.5.1
+transformers==4.21.3
