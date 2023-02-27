@@ -24,6 +24,8 @@ This guide provides a checklist for contributing new cleanlab examples.
     This will create a badge that will link to a Google Colab version of the notebook. 
     
     Note that the Colab badge links to the notebook in the master branch, so at the time of making the PR, the link will be invalid. Please remember to check that the Colab link works after the PR has been approved and merged to `master`.
+    
+    The Colab badge must also be in its own notebook cell, not with other content.
 
 - Use `pip freeze` to determine the package versions that are used, then
 
@@ -42,6 +44,18 @@ This guide provides a checklist for contributing new cleanlab examples.
         > ```
         > https://github.com/cleanlab/examples/blob/master/find_label_errors_iris/requirements.txt
         > ```
+
+- Ensure that your notebook is using the correct kernel. In jupyter notebook, you can check the notebook's metadata by navigating to `Edit` > `Edit Notebook Metadata` and check if the follow fields match this:
+
+```json
+"kernelspec": {
+    "name": "python3",
+    "display_name": "Python 3 (ipykernel)",
+    "language": "python"
+  }
+```
+
+This is especially important so that papermill can run smoothly.
 
 - If the notebook takes a long time to run or is hard to auto-execute, add its folder name to the `ignore_folders` list in [run_all_notebooks.py](run_all_notebooks.py).
 
