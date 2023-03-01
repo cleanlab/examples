@@ -45,10 +45,9 @@ To see the examples corresponding to specific version of cleanlab, check out the
 
 ### Running all examples
 
-You may run the notebooks individually or run the bash script below which will execute and save each notebook (for examples: 1-7). Note that before executing the script to run all notebooks for the first time you will need to create a jupyter kernel named `cleanlab-examples`. Be sure that you have already created and activated the virtual environment (steps provided above) before running the following commands to create the jupyter kernel (and install necessary dependencies).
+You may run the notebooks individually or run the bash script below which will execute and save each notebook (for examples: 1-7). Note that before executing the script to run all notebooks for the first time you will need to create a jupyter kernel named `cleanlab-examples`. Be sure that you have already created and activated the virtual environment (steps provided above) before running the following command to create the jupyter kernel.
 
 ```console
-$ python -m pip install papermill ipykernel
 $ python -m ipykernel install --user --name=cleanlab-examples
 ```
 
