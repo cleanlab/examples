@@ -1,13 +1,14 @@
 cleanlab # Some examples may require you to instead install latest developer version of cleanlab from github: pip install git+https://github.com/cleanlab/cleanlab.git
-annoy==1.17.1
-autogluon.vision==0.5.2
-gdown==4.5.3
-ipykernel==6.15.2
-ipywidgets==8.0.2
+matplotlib
+ipykernel
+black[jupyter]
 jupyterlab
+annoy==1.17.1
+autogluon.vision
+gdown==4.5.3
+ipywidgets==8.0.2
 matplotlib==3.5.1
 nltk==3.7
-numpy==1.22.0
 pandas==1.4.1
 papermill==2.4.0
 Pillow==9.0.1
@@ -23,4 +24,3 @@ timm
 torch==1.12.1
 tqdm>=4.64.0
 transformers==4.22.0.dev0
-black[jupyter]
