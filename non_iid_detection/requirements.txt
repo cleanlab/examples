@@ -1,3 +1,4 @@
+# This notebook currently requires the latest developer version of cleanlab: pip install git+https://github.com/cleanlab/cleanlab.git 
 numpy==1.22.0
 pandas==1.4.1
 scipy==1.7.3
