@@ -30,6 +30,7 @@ def main(root_dir):
         "outlier_detection_cifar10",  # requires GPU
         "multilabel_classification",  # requires GPU
         "entity_recognition",  # requires GPU, does not use cleanlab
+        "active_learning_multiannotator",  # requires external utils files that dont work with papermill
         "cnn_coteaching_cifar10",  # no ipynb, only a py file
     ]
 
