@@ -17,19 +17,52 @@ from autogluon.vision import ImagePredictor, ImageDataset
 from sklearn.model_selection import StratifiedKFold
 from autogluon.multimodal import MultiModalPredictor
 
-from cleanlab.internal.util import (
-    get_num_classes,
-    append_extra_datapoint,
-    train_val_split,
-)
+from cleanlab.internal.util import get_num_classes
 
 
-def cross_val_predict_autogluon_classification_dataset(
+def predict_autogluon_classification(
     dataset: ImageDataset,
-    out_folder: str = "./cross_val_predict_run/",
+    out_folder: str = "./model_training_run/",
+    *,
+    X_predict=None,
+    df_predict=None,
+    hypterparameters={},
+    time_limit=30,
+):
+    
+    if X_predict is None:
+        X_predict = np.array([])
+
+    num_classes = get_num_classes(labels=dataset.label.values)
+    
+    save_path = None if out_folder is None else f'{out_folder}'
+    predictor = MultiModalPredictor(label="label", 
+                                    path=save_path, 
+                                    problem_type="classification", 
+                                    warn_if_exist=False)
+
+    # train model on train indices in this split
+    predictor.fit(
+        train_data=dataset,
+        time_limit=time_limit, # seconds
+        hyperparameters=hypterparameters,
+    ) # you can trust the default config, e.g., we use a `swin_base_patch4_window7_224` model
+
+    pred_probs_unlabeled = None
+    
+    if len(X_predict) > 0:
+        pred_probs_unlabeled = predictor.predict_proba(X_predict)
+    elif df_predict is not None:
+        pred_probs_unlabeled = predictor.predict_proba(df_predict, as_pandas=False)
+    
+    return predictor, pred_probs_unlabeled
+
+
+def cross_val_predict_autogluon_classification(
+    dataset: ImageDataset,
+    out_folder: str = "./cross_val_model_training_run/",
     *,
     cv_n_folds: int = 5,
-    X_predict=None,
     df_predict=None,
     hypterparameters={},
     time_limit=30,
