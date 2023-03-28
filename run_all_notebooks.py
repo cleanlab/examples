@@ -32,6 +32,7 @@ def main(root_dir):
         "entity_recognition",  # requires GPU, does not use cleanlab
         "active_learning_multiannotator",  # requires external utils files that dont work with papermill
         "cnn_coteaching_cifar10",  # no ipynb, only a py file
+        "active_learning_single_annotator",  # slow repeated training of image classifier
     ]
 
     folders = [
