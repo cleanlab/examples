@@ -1,5 +1,5 @@
 """ Helper method to train AutoML model for image classification. """
-from typing import Dict
+from typing import Dict, Any
 
 import cleanlab
 from gluoncv.auto.data.dataset import ImageClassificationDataset
