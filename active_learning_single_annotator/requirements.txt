@@ -4,3 +4,4 @@ numpy==1.22.0
 pandas==1.4.1
 scikit_learn==1.0.2
 autogluon==0.7.0
+gluoncv==0.10.5.post0
