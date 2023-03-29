@@ -1,4 +1,4 @@
-# This notebook requires cleanlab versions >= 2.3.0:  pip install "cleanlab>=2.3.0"
+# This notebook requires cleanlab versions >= 2.3.1:  pip install "cleanlab>=2.3.1"
 matplotlib==3.5.1
 numpy==1.22.0
 pandas==1.4.1
