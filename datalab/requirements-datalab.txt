@@ -1,0 +1,3 @@
+git+https://github.com/elisno/cleanlab.git@datalab#egg=cleanlab[datalab]
+matplotlib
+ipykernel
