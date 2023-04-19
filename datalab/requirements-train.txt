@@ -1,0 +1,9 @@
+numpy
+opencv-python
+pandas
+scikit-learn
+timm
+tqdm
+--extra-index-url https://download.pytorch.org/whl/cu116
+torch
+torchvision
