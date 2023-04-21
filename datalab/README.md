@@ -1,4 +1,5 @@
 # Detecting issues in an image classification dataset (Caltech-256) with Datalab and a Swin Transformer model.
+
 This example demonstrates cleanlab's Datalab class for auditing an image dataset.
 
 It is split into two notebooks:
