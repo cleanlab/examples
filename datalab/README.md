@@ -1,4 +1,4 @@
-# Training a Swin Transformer model with PyTorch on a subset of Caltech-256 for auditing with Datalab
+# Detecting issues in an image classification dataset (Caltech-256) with Datalab and a Swin Transformer model.
 This example demonstrates the use of the following module below from cleanlab:
 
 It is split into two notebooks:
