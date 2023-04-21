@@ -2,7 +2,7 @@
 This example demonstrates the use of the following module below from cleanlab:
 
 It is split into two notebooks:
-- [train_subset.ipynb](train_subset.ipynb) - Trains a Swin Transformer model on a subset of Caltech-256
+- [train_image_classifier.ipynb](train_image_classifier.ipynb) - Trains a Swin Transformer model on a subset of Caltech-256
 
 
   - Install dependencies with:
