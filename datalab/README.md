@@ -11,7 +11,7 @@ It is split into two notebooks:
     pip install -r requirements-train.txt
     ```
 
-- [datalab.ipynb](datalab.ipynb) - Runs the dataset through Datalab with the trained model artifacts.
+- [datalab.ipynb](datalab.ipynb) - Audits the dataset using Datalab applied to outputs from the trained model.
   - Install dependencies with
     ```
     pip install -r requirements-datalab.txt
