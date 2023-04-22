@@ -9,7 +9,7 @@ It is split into two notebooks:
   - Install dependencies with:
 
     ```
-    pip install -r requirements-train.txt
+    pip install -r requirements-train.txt --extra-index-url https://download.pytorch.org/whl/cu116
     ```
 
 - [datalab.ipynb](datalab.ipynb) - Audits the dataset using Datalab applied to outputs from the trained model.
