@@ -3,7 +3,7 @@
 This example demonstrates cleanlab's Datalab class for auditing an image dataset.
 
 It is split into two notebooks:
-- [train_image_classifier.ipynb](train_image_classifier.ipynb) - Trains a Swin Transformer model on a subset of Caltech-256
+- [train_image_classifier.ipynb](train_image_classifier.ipynb) - Trains a Swin Transformer classifier model on a subset of Caltech-256
 
 
   - Install dependencies with:
