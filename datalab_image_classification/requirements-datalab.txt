@@ -1,2 +1,2 @@
-git+https://github.com/elisno/cleanlab.git@datalab#egg=cleanlab[datalab]
+git+https://github.com/cleanlab/cleanlab.git#egg=cleanlab[datalab]
 matplotlib
