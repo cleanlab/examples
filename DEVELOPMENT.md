@@ -26,6 +26,8 @@ This guide provides a checklist for contributing new cleanlab examples.
     Note that the Colab badge links to the notebook in the master branch, so at the time of making the PR, the link will be invalid. Please remember to check that the Colab link works after the PR has been approved and merged to `master`.
     
     The Colab badge must also be in its own notebook cell, not with other content.
+    
+- If your notebook cannot be fully executed and does not have a Colab badge, you can specify the folder name containing your notebook (not the notebook name) to the `ignore_paths` argument in the [ci.yml file](.github/workflows/ci.yml#L13). This input should be a comma-separated list of folders. Adding your folder to the `ignore_paths` input will make the notebook linter skip all notebooks in that folder, and hence will not throw an error about a missing Colab badge during CI.
 
 - Use `pip freeze` to determine the package versions that are used, then
 
