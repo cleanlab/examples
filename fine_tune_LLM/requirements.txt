@@ -1,5 +1,1 @@
 openai==0.27.2
-pandas==1.4.4
-numpy==1.23.2
-cleanlab==2.2.0
-scikit-learn==1.1.2
