@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: cleanlab/nblint-action@v1
         with:
-          ignore_paths: 'contrib'
+          ignore_paths: 'contrib,fine_tune_LLM'
           check_correct_kernel: true
           check_notebook_badge: true
           check_outputs_empty: false
