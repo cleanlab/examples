@@ -1,4 +1,3 @@
-cleanlab==2.2.0
 pandas==1.4.4
 numpy==1.23.2
 datasets==2.9.0
