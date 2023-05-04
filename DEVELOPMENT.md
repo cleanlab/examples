@@ -84,3 +84,5 @@ Bash script to run all notebooks:
 ```console
 $ bash ./run_all_notebooks.sh
 ```
+
+Note that the `run_all_notebooks` script will only work on `python<=3.9` as some of the dependencies do not support later versions.

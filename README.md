@@ -32,16 +32,7 @@ To quickly learn how to run cleanlab on your own data, first check out the [quic
 
 ## Instructions
 
-To run the latest example notebooks, execute the commands below which will install the required libraries in a virtual environment.
-
-```console
-$ python -m pip install virtualenv
-$ python -m venv cleanlab-examples  # creates a new venv named cleanlab-examples
-$ source cleanlab-examples/bin/activate
-$ python -m pip install -r requirements.txt
-```
-
-Alternatively you can only install those dependencies required for a specific example by calling `pip install -r requirements.txt` inside the subfolder for that example (each example's subfolder contains a separate `requirements.txt` file).
+To run the latest example notebooks, you can install the dependecies required for each example by calling `pip install -r requirements.txt` inside the subfolder for that example (each example's subfolder contains a separate `requirements.txt` file). 
 
 It is recommended to run the examples with the latest stable cleanlab release (`pip install cleanlab`). 
 However be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence some very-recently added examples may require you to instead install the developer version of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`). 
