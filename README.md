@@ -47,19 +47,6 @@ It is recommended to run the examples with the latest stable cleanlab release (`
 However be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence some very-recently added examples may require you to instead install the developer version of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`). 
 To see the examples corresponding to specific version of cleanlab, check out the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository (e.g. the examples for cleanlab v2.1.0 are [here](https://github.com/cleanlab/examples/tree/v2.1.0)).
 
-### Running all examples
-
-You may run the notebooks individually or run the bash script below which will execute and save each notebook (at least the first few examples notebooks, later notebooks may be skipped because they do not run quickly). Note that before executing the script to run all notebooks for the first time you will need to create a jupyter kernel named `cleanlab-examples`. Be sure that you have already created and activated the virtual environment (steps provided above) before running the following command to create the jupyter kernel.
-
-```console
-$ python -m ipykernel install --user --name=cleanlab-examples
-```
-
-Bash script to run all notebooks:
-
-```console
-$ bash ./run_all_notebooks.sh
-```
 
 ### Older Examples
 
