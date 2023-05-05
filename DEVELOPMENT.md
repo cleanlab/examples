@@ -75,7 +75,7 @@ You may run the notebooks individually or run the bash script below which will e
 python -m pip install virtualenv
 $ python -m venv cleanlab-examples  # creates a new venv named cleanlab-examples
 $ source cleanlab-examples/bin/activate
-$ python -m pip install -r requirements.txt
+$ python -m pip install -r requirements-dev.txt
 $ python -m ipykernel install --user --name=cleanlab-examples
 ```
 
