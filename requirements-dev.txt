@@ -24,3 +24,4 @@ timm
 torch==1.12.1
 tqdm>=4.64.0
 transformers==4.22.0.dev0
+xgboost==1.7

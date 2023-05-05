@@ -65,3 +65,24 @@ This is especially important so that papermill can run smoothly.
  table in the README, ideally grouping the newly added example with any other related examples.
 
 - After a new notebook has been added and pushed to `master` branch, AVOID changing the notebook and folder names, as this may break existing links referencing the example notebook throughout cleanlab documentation, blog posts, and more.
+
+
+### Running all examples
+
+You may run the notebooks individually or run the bash script below which will execute and save each notebook (at least the first few examples notebooks, later notebooks may be skipped because they do not run quickly). Note that before executing the script to run all notebooks for the first time you will need to create a jupyter kernel named `cleanlab-examples`. Be sure that you have already created and activated the virtual environment before running the following command to create the jupyter kernel.
+
+```console$ 
+python -m pip install virtualenv
+$ python -m venv cleanlab-examples  # creates a new venv named cleanlab-examples
+$ source cleanlab-examples/bin/activate
+$ python -m pip install -r requirements-dev.txt
+$ python -m ipykernel install --user --name=cleanlab-examples
+```
+
+Bash script to run all notebooks:
+
+```console
+$ bash ./run_all_notebooks.sh
+```
+
+Note that the `run_all_notebooks` script will only work on `python<=3.9` as some of the dependencies do not support later versions.

@@ -32,34 +32,12 @@ To quickly learn how to run cleanlab on your own data, first check out the [quic
 
 ## Instructions
 
-To run the latest example notebooks, execute the commands below which will install the required libraries in a virtual environment.
-
-```console
-$ python -m pip install virtualenv
-$ python -m venv cleanlab-examples  # creates a new venv named cleanlab-examples
-$ source cleanlab-examples/bin/activate
-$ python -m pip install -r requirements.txt
-```
-
-Alternatively you can only install those dependencies required for a specific example by calling `pip install -r requirements.txt` inside the subfolder for that example (each example's subfolder contains a separate `requirements.txt` file).
+To run the latest example notebooks, you can install the dependecies required for each example by calling `pip install -r requirements.txt` inside the subfolder for that example (each example's subfolder contains a separate `requirements.txt` file). 
 
 It is recommended to run the examples with the latest stable cleanlab release (`pip install cleanlab`). 
 However be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence some very-recently added examples may require you to instead install the developer version of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`). 
 To see the examples corresponding to specific version of cleanlab, check out the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository (e.g. the examples for cleanlab v2.1.0 are [here](https://github.com/cleanlab/examples/tree/v2.1.0)).
 
-### Running all examples
-
-You may run the notebooks individually or run the bash script below which will execute and save each notebook (at least the first few examples notebooks, later notebooks may be skipped because they do not run quickly). Note that before executing the script to run all notebooks for the first time you will need to create a jupyter kernel named `cleanlab-examples`. Be sure that you have already created and activated the virtual environment (steps provided above) before running the following command to create the jupyter kernel.
-
-```console
-$ python -m ipykernel install --user --name=cleanlab-examples
-```
-
-Bash script to run all notebooks:
-
-```console
-$ bash ./run_all_notebooks.sh
-```
 
 ### Older Examples
 
