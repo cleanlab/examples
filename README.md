@@ -57,7 +57,7 @@ For additional details, check out the: [confidentlearning-reproduce repository](
 
 ### State of the Art Learning with Noisy Labels in CIFAR
 
-A step-by-step guide to reproduce these results is available [here](https://github.com/cleanlab/examples/tree/master/contrib/v1/cifar10). This guide is also a good tutorial for using cleanlab on any large dataset. You'll need to `git clone`
+A step-by-step guide to reproduce these results is available [here](contrib/v1/cifar10). This guide is also a good tutorial for using cleanlab on any large dataset. You'll need to `git clone`
 [confidentlearning-reproduce](https://github.com/cgnorthcutt/confidentlearning-reproduce) which contains the data and files needed to reproduce the CIFAR-10 results.
 
 ![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/cifar10_benchmarks.png)
@@ -68,7 +68,7 @@ Observe how cleanlab (i.e. the CL method) is robust to large sparsity in label n
 
 ### Find label issues in ImageNet
 
-Use cleanlab to identify \~100,000 label errors in the 2012 ILSVRC ImageNet training dataset: [examples/imagenet](https://github.com/cleanlab/examples/tree/master/contrib/v1/imagenet).
+Use cleanlab to identify \~100,000 label errors in the 2012 ILSVRC ImageNet training dataset: [imagenet](contrib/v1/imagenet).
 
 ![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/imagenet_train_label_errors_32.jpg)
 
@@ -76,7 +76,7 @@ Label issues in ImageNet train set found via cleanlab. Label Errors are boxed in
 
 ### Find Label Errors in MNIST
 
-Use cleanlab to identify \~50 label errors in the MNIST dataset: [examples/mnist](https://github.com/cleanlab/examples/tree/master/contrib/v1/mnist).
+Use cleanlab to identify \~50 label errors in the MNIST dataset: [mnist](contrib/v1/mnist).
 
 ![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/mnist_training_label_errors24_prune_by_noise_rate.png)
 
@@ -91,7 +91,7 @@ Learning with noisy labels across 4 data distributions and 9 classifiers
 </summary>
 <br/>
 
-cleanlab is a general tool that can learn with noisy labels regardless of dataset distribution or classifier type: [examples/classifier\_comparison](https://github.com/cleanlab/examples/blob/master/classifier_comparison/classifier_comparison.ipynb).
+cleanlab is a general tool that can learn with noisy labels regardless of dataset distribution or classifier type: [classifier_comparison](classifier_comparison/classifier_comparison.ipynb).
 
 ![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/demo_cleanlab_across_datasets_and_classifiers.png)
 
@@ -174,7 +174,7 @@ Many methods and their default parameters are not covered here. Check out the [d
 pred_probs (num_examples x num_classes matrix of predicted probabilities) should already be computed on your own, with any classifier. For best results, pred_probs should be obtained in a holdout/out-of-sample manner (e.g. via cross-validation).
 * cleanlab can do this for you via [`cleanlab.count.estimate_cv_predicted_probabilities`](https://docs.cleanlab.ai/stable/cleanlab/count.html)]
 * Tutorial with more info: [[here](https://docs.cleanlab.ai/stable/tutorials/pred_probs_cross_val.html)]
-* Examples how to compute pred_probs with: [[CNN image classifier (PyTorch)](https://docs.cleanlab.ai/stable/tutorials/image.html)], [[NN text classifier (TensorFlow)](https://docs.cleanlab.ai/stable/tutorials/text.html)]
+* Examples how to compute pred_probs with: [[CNN image classifier (PyTorch)](https://docs.cleanlab.ai/stable/tutorials/image.html)]
 
 ```python
 # label issues are ordered by likelihood of being an error. First index is most likely error.
@@ -187,7 +187,7 @@ ordered_label_issues = find_label_issues(  # One line of code!
  )
 ```
 
-Pre-computed **out-of-sample** predicted probabilities for CIFAR-10 train set are available: [here](https://github.com/cleanlab/examples/tree/master/contrib/v1/cifar10#pre-computed-psx-for-every-noise--sparsity-condition).
+Pre-computed **out-of-sample** predicted probabilities for CIFAR-10 train set are available: [here](contrib/v1/cifar10#pre-computed-psx-for-every-noise--sparsity-condition).
 
 ## Fully characterize label noise and uncertainty in your dataset.
 
