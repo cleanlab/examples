@@ -31,6 +31,10 @@ def main(root_dir):
         "multilabel_classification",  # requires GPU
         "entity_recognition",  # requires GPU, does not use cleanlab
         "cnn_coteaching_cifar10",  # no ipynb, only a py file
+        "active_learning_multiannotator",  # requires external utils files that dont work with papermill
+        "active_learning_single_annotator",  # slow repeated training of image classifier
+        "active_learning_transformers",  # slow repeated training of transformer network
+        "fine_tune_LLM",  # requires OpenAI key
     ]
 
     folders = [
