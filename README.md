@@ -29,7 +29,7 @@ To quickly learn how to run cleanlab on your own data, first check out the [quic
 | 18  | [entity_recognition](entity_recognition/entity_recognition_training.ipynb)                                             | Train Transformer model  for Named Entity Recognition and produce out-of-sample `pred_probs` for **cleanlab.token_classification**.      |
 | 19  | [transformer_sklearn](transformer_sklearn/transformer_sklearn.ipynb)                                             | How to use `KerasWrapperModel` to make any Keras model sklearn-compatible, demonstrated here for a BERT Transformer.      |
 | 20  | [cnn_coteaching_cifar10](cnn_coteaching_cifar10)                                               | Train a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) on noisily labeled Cifar10 image data using cleanlab with [coteaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py).  |
-| 21  | [non_iid_detection](non_iid_detection/non_iid_datalab.ipynb)  | Use cleanlab to detect non-IID issues in datasets. |
+| 21  | [non_iid_detection](non_iid_detection/non_iid_datalab.ipynb)  | Use Datalab to detect non-IID sampling (e.g. drift) in datasets. |
 
 ## Instructions
 
