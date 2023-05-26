@@ -27,7 +27,7 @@ This guide provides a checklist for contributing new cleanlab examples.
     
     The Colab badge must also be in its own notebook cell, not with other content.
     
-- If your notebook cannot be fully executed and does not have a Colab badge, you can specify the folder name containing your notebook (not the notebook name) to the `ignore_paths` argument in the [ci.yml file](.github/workflows/ci.yml#L13). This input should be a comma-separated list of folders. Adding your folder to the `ignore_paths` list will make the notebook linter skip all notebooks in that folder, and hence will not throw an error about a missing Colab badge during CI.
+- If your notebook cannot be fully executed and does not have a Colab badge, you can specify the folder name containing your notebook (not the notebook name) to the `ignore_paths` argument in the [ci.yml file](./.github/workflows/ci.yml#L13). This input should be a comma-separated list of folders. Adding your folder to the `ignore_paths` list will make the notebook linter skip all notebooks in that folder, and hence will not throw an error about a missing Colab badge during CI.
 
 - Use `pip freeze` to determine the package versions that are used, then
 

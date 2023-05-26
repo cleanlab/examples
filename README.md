@@ -8,7 +8,7 @@ To quickly learn how to run cleanlab on your own data, first check out the [quic
 
 |     | Example                                                                                        | Description                                                                                                                                                                                                                                                                  |
 | --- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [datalab](datalab_image_classification)                              | Use Datalab to detect various types of data issues in (a subset of) the Caltech-256 image classification dataset.                        |
+| 1   | [datalab](datalab_image_classification/README.md)                              | Use Datalab to detect various types of data issues in (a subset of) the Caltech-256 image classification dataset.                        |
 | 2   | [find_label_errors_iris](find_label_errors_iris/find_label_errors_iris.ipynb)                                         | Find label errors introduced into the Iris classification dataset.                                                 |
 | 3   | [classifier_comparison](classifier_comparison/classifier_comparison.ipynb)                                     | Use CleanLearning to train 10 different classifiers on 4 dataset distributions with label errors.                     |
 | 4   | [hyperparameter_optimization](hyperparameter_optimization/hyperparameter_optimization.ipynb)                                       | Hyperparameter optimization to find the best settings of CleanLearning's optional parameters.                                          |
@@ -27,7 +27,7 @@ To quickly learn how to run cleanlab on your own data, first check out the [quic
 | 17  | [multilabel_classification](multilabel_classification/image_tagging.ipynb)                                               | Find label errors in an image tagging dataset ([CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)) using a [Pytorch model](multilabel_classification/pytorch_network_training.ipynb) you can easily train for multi-label classification. |
 | 18  | [entity_recognition](entity_recognition/entity_recognition_training.ipynb)                                             | Train Transformer model  for Named Entity Recognition and produce out-of-sample `pred_probs` for **cleanlab.token_classification**.      |
 | 19  | [transformer_sklearn](transformer_sklearn/transformer_sklearn.ipynb)                                             | How to use `KerasWrapperModel` to make any Keras model sklearn-compatible, demonstrated here for a BERT Transformer.      |
-| 20  | [cnn_coteaching_cifar10](cnn_coteaching_cifar10)                                               | Train a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) on noisily labeled Cifar10 image data using cleanlab with [coteaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py).  |
+| 20  | [cnn_coteaching_cifar10](cnn_coteaching_cifar10/README.md)                                               | Train a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) on noisily labeled Cifar10 image data using cleanlab with [coteaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py).  |
 | 21  | [non_iid_detection](non_iid_detection/non_iid_detection.ipynb)  | Use Datalab to detect non-IID sampling (e.g. drift) in datasets based on numeric features or embeddings. |
 
 
@@ -58,7 +58,7 @@ For additional details, check out the: [confidentlearning-reproduce repository](
 
 ### State of the Art Learning with Noisy Labels in CIFAR
 
-A step-by-step guide to reproduce these results is available [here](contrib/v1/cifar10). This guide is also a good tutorial for using cleanlab on any large dataset. You'll need to `git clone`
+A step-by-step guide to reproduce these results is available [here](contrib/v1/cifar10/README.md). This guide is also a good tutorial for using cleanlab on any large dataset. You'll need to `git clone`
 [confidentlearning-reproduce](https://github.com/cgnorthcutt/confidentlearning-reproduce) which contains the data and files needed to reproduce the CIFAR-10 results.
 
 ![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/cifar10_benchmarks.png)
@@ -69,7 +69,7 @@ Observe how cleanlab (i.e. the CL method) is robust to large sparsity in label n
 
 ### Find label issues in ImageNet
 
-Use cleanlab to identify \~100,000 label errors in the 2012 ILSVRC ImageNet training dataset: [imagenet](contrib/v1/imagenet).
+Use cleanlab to identify \~100,000 label errors in the 2012 ILSVRC ImageNet training dataset: [imagenet](contrib/v1/imagenet/imagenet_val_label_error_indices/README.md).
 
 ![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/imagenet_train_label_errors_32.jpg)
 
@@ -77,7 +77,7 @@ Label issues in ImageNet train set found via cleanlab. Label Errors are boxed in
 
 ### Find Label Errors in MNIST
 
-Use cleanlab to identify \~50 label errors in the MNIST dataset: [mnist](contrib/v1/mnist).
+Use cleanlab to identify \~50 label errors in the MNIST dataset: [mnist](contrib/v1/mnist/README.md).
 
 ![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/mnist_training_label_errors24_prune_by_noise_rate.png)
 

@@ -24,3 +24,5 @@ jobs:
             ^https:\/\/docs\.github\.com\/
             ^https:\/\/github\.com\/cleanlab\/cleanlab\/projects
             ^https:\/\/twitter.com\/CleanlabAI
+          swap_urls: |
+            {"^\.\/": "https://github.com/cleanlab/examples/blob/master/"}

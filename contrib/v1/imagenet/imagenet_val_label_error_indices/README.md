@@ -1,6 +1,6 @@
 # Finding Label Errors in the 2012 ImageNet validation dataset.
 
-**Feb 14, 2021** -- **News!** -- All val set label errors (+ 9 other datasets) are here: [labelerrors.com](http://labelerrors.com/).
+**Feb 14, 2021** -- **News!** -- All val set label errors (+ 9 other datasets) are here: [labelerrors.com](https://labelerrors.com/).
 
 
 ## To find the label errors yourself, you'll need to:
