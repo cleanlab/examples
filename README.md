@@ -61,7 +61,7 @@ For additional details, check out the: [confidentlearning-reproduce repository](
 A step-by-step guide to reproduce these results is available [here](contrib/v1/cifar10/README.md). This guide is also a good tutorial for using cleanlab on any large dataset. You'll need to `git clone`
 [confidentlearning-reproduce](https://github.com/cgnorthcutt/confidentlearning-reproduce) which contains the data and files needed to reproduce the CIFAR-10 results.
 
-![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/cifar10_benchmarks.png)
+![cifar10 benchmarks](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/cifar10_benchmarks.png)
 
 Comparison of confident learning (CL), as implemented in cleanlab, versus seven recent methods for learning with noisy labels in CIFAR-10. Highlighted cells show CL robustness to sparsity. The five CL methods estimate label issues, remove them, then train on the cleaned data using [Co-Teaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py).
 
@@ -71,7 +71,7 @@ Observe how cleanlab (i.e. the CL method) is robust to large sparsity in label n
 
 Use cleanlab to identify \~100,000 label errors in the 2012 ILSVRC ImageNet training dataset: [imagenet](contrib/v1/imagenet/imagenet_val_label_error_indices/README.md).
 
-![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/imagenet_train_label_errors_32.jpg)
+![label errors in imagenet](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/imagenet_train_label_errors_32.jpg)
 
 Label issues in ImageNet train set found via cleanlab. Label Errors are boxed in red. Ontological issues in green. Multi-label images in blue.
 
@@ -79,7 +79,7 @@ Label issues in ImageNet train set found via cleanlab. Label Errors are boxed in
 
 Use cleanlab to identify \~50 label errors in the MNIST dataset: [mnist](contrib/v1/mnist/README.md).
 
-![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/mnist_training_label_errors24_prune_by_noise_rate.png)
+![label errors in mnist](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/mnist_training_label_errors24_prune_by_noise_rate.png)
 
 Top 24 least-confident labels in the original MNIST **train** dataset, algorithmically identified via cleanlab. Examples are ordered left-right, top-down by increasing self-confidence (predicted probability that the **given** label is correct), denoted **conf** in teal. The most-likely correct label (with largest predicted probability) is in green. Overt label errors highlighted in red.
 
@@ -94,7 +94,7 @@ Learning with noisy labels across 4 data distributions and 9 classifiers
 
 cleanlab is a general tool that can learn with noisy labels regardless of dataset distribution or classifier type: [classifier_comparison](classifier_comparison/classifier_comparison.ipynb).
 
-![](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/demo_cleanlab_across_datasets_and_classifiers.png)
+![classifier comparison](https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/demo_cleanlab_across_datasets_and_classifiers.png)
 
 Each sub-figure above depicts the decision boundary learned using [cleanlab.classification.CleanLearning](https://docs.cleanlab.ai/stable/cleanlab/classification.html) in the presence of extreme (\~35%) label errors (circled in green). Label noise is class-conditional (not uniformly random). Columns are organized by the classifier used, except the left-most column which depicts the ground-truth data distribution. Rows are organized by dataset.
 
