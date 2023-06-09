@@ -29,5 +29,9 @@ jobs:
           ignore_url: |
             https://github.com/cleanlab/s/blob/master/student-grades-demo.csv
             https://github.com/cgnorthcutt/confidentlearning-reproduce/blob/master/cifar10/confidentlearning_and_coteaching/results/4_6/train_pruned_cl_pbnr/train_mask.npy
+            https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/cifar10_benchmarks.png
+            https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/imagenet_train_label_errors_32.jpg
+            https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/mnist_training_label_errors24_prune_by_noise_rate.png
+            https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/demo_cleanlab_across_datasets_and_classifiers.png
           swap_urls: |
             {"^\.\/": "https://github.com/cleanlab/examples/blob/master/"}
