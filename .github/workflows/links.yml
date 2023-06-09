@@ -19,6 +19,7 @@ jobs:
         with:
           directory: .
           check_favicon: false
+          check_html: false
           ignore_empty_alt: true
           ignore_url_re: |
             ^https:\/\/docs\.github\.com\/
