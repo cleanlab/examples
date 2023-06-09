@@ -1,0 +1,5 @@
+numpy==1.22.0
+detectron2==0.6
+torch==1.110+cu113
+pandas==1.5.0
+# Note: for now, these examples only work with the developer version of cleanlab: `pip install git+https://github.com/cleanlab/cleanlab.git`
