@@ -30,6 +30,7 @@ To quickly learn how to run cleanlab on your own data, first check out the [quic
 | 20  | [cnn_coteaching_cifar10](cnn_coteaching_cifar10/README.md)                                               | Train a [Convolutional Neural Network](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/cifar_cnn.py) on noisily labeled Cifar10 image data using cleanlab with [coteaching](https://github.com/cleanlab/cleanlab/blob/master/cleanlab/experimental/coteaching.py).  |
 | 21  | [non_iid_detection](non_iid_detection/non_iid_detection.ipynb)  | Use Datalab to detect non-IID sampling (e.g. drift) in datasets based on numeric features or embeddings. |
 | 22  | [object_detection](object_detection/README.md)  | Notebooks to train Detectron2 object detection model for use with cleanlab. |
+| 23 | [few_shot_prompt_selection](few_shot_prompt_selection/few_shot_prompt_selection.ipynb) | Notebook showing use of Cleanlab Studio to clean few-shot examples pool to increase accuracy of OpenAI LLM.| 
 
 
 ## Instructions
