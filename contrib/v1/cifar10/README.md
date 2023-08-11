@@ -7,7 +7,7 @@ This code can be used to achieve state-of-the-art (as of Feb. 2020) for learning
 The main procedure is simple:
 1. Compute cross-validated predicted probabilities.
 2. Use `cleanlab` to find the label errors in CIFAR-10.
-3. Remove errors and train on cleaned data via [Co-Teaching](https://github.com/cgnorthcutt/cleanlab/blob/4245cde2f177cdb999b7216fef67d3fe6425982d/examples/cifar10/cifar10_train_crossval.py#L139).
+3. Remove errors and train on cleaned data via [Co-Teaching] (https://github.com/cgnorthcutt/cleanlab/blob/4245cde2f177cdb999b7216fef67d3fe6425982d/examples/cifar10/cifar10_train_crossval.py) (use argument `--coteaching`).
 
 ## Step-by-step: finding label errors and state-of-the-art test accuracy.
 
