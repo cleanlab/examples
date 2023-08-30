@@ -23,5 +23,5 @@ There are two notebooks:
 You can also audit your dataset for the same issues detected by Datalab (and more) without having to: write code, train your own machine learning model, or set up your own interface to the data/results. [Cleanlab Studio](https://cleanlab.ai/studio/?utm_source=github&utm_medium=readme&utm_campaign=clostostudio) does all this for you automatically. For image/text/tabular datasets, [most users](https://cleanlab.ai/love/) obtain better results with [Cleanlab Studio](https://cleanlab.ai/studio/?utm_source=github&utm_medium=readme&utm_campaign=clostostudio) vs. implementing their own solution (and achieve these results [100x faster](https://cleanlab.ai/blog/data-centric-ai/)).
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/imagenet-cleanlab-studio.png" width=70% height=70%>
+  <img src="https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/imagenet-cleanlab-studio.png" width=70% height=70% alt="Cleanlab Studio results for ImageNet dataset">
 </p>
