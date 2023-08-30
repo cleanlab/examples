@@ -2,7 +2,7 @@
 
 This repo contains code examples that demonstrate how to use [cleanlab](https://github.com/cleanlab/cleanlab) with specific real-world models/datasets, how its underlying algorithms work, how to get better results via advanced functionality, and how to train certain models used in some cleanlab tutorials.  
 
-To quickly learn how to run cleanlab on your own data, first check out the [quickstart tutorials](https://docs.cleanlab.ai/) before diving into the examples below. [Our blog](https://cleanlab.ai/blog/) demonstrates many more applications beyond the code examples provided in this repository.   
+To quickly learn how to run cleanlab on your own data, first check out the [quickstart tutorials](https://docs.cleanlab.ai/) before diving into the examples below. [Our blog](https://cleanlab.ai/blog/) demonstrates many more applications beyond these code examples.   
 
 ## Table of Contents
 
