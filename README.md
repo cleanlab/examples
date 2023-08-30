@@ -329,7 +329,7 @@ Now that you have `indices_of_label_errors`, you can remove those label issues a
 If you'd like to accomplish any of the workflows demonstrated in these notebooks without having to: write code, train your own machine learning system, or set up your own interface to the data/results, then try [Cleanlab Studio](https://cleanlab.ai/studio/?utm_source=github&utm_medium=readme&utm_campaign=clostostudio). This platform integrates Cleanlab data quality algorithms with the *best* AI and interfaces to [automatically find and fix issues in datasets](https://cleanlab.ai/blog/data-centric-ai/). There is no easier way to turn *unreliable* raw data into *reliable* models/analytics.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/full-automated-ai-pipeline.jpg">
+  <img src="https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/full-automated-ai-pipeline.jpg" alt="Stages of modern AI pipeline that can now be automated with Cleanlab Studio">
 </p>
 
 ## License
