@@ -31,6 +31,7 @@ To quickly learn how to run cleanlab on your own data, first check out the [quic
 | 21  | [non_iid_detection](non_iid_detection/non_iid_detection.ipynb)  | Use Datalab to detect non-IID sampling (e.g. drift) in datasets based on numeric features or embeddings. |
 | 22  | [object_detection](object_detection/README.md)  | Train Detectron2 object detection model for use with cleanlab. |
 | 23  | [semantic segmentation](segmentation/training_ResNeXt50_for_Semantic_Segmentation_on_SYNTHIA.ipynb)  | Train ResNeXt semantic segmentation model for use with cleanlab. |
+| 24 | [llm_evals_w_crowdlab](llm_evals_w_crowdlab/llm_evals_w_crowdlab.ipynb) | Uses GPT4o and CROWDLAB to evaluate language models on a dataset labeled by multiple annotators. |
 
 
 ## Instructions
