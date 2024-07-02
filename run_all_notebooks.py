@@ -27,6 +27,7 @@ def main(root_dir):
         # insert notebooks to ignore below
         "fasttext_amazon_reviews",  # takes very long to run
         "multiannotator_cifar10",  # requires GPU
+        "llm_evals_w_crowdlab", # Requires OpenAI key
         "outlier_detection_cifar10",  # requires GPU
         "multilabel_classification",  # requires GPU
         "entity_recognition",  # requires GPU, does not use cleanlab
