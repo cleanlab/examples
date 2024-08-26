@@ -1,4 +1,4 @@
-cleanlab
+git+https://github.com/cleanlab/cleanlab.git#egg=cleanlab[all]
 cleanvision
 torch
 torchvision
