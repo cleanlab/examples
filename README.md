@@ -32,6 +32,7 @@ To quickly learn how to run cleanlab on your own data, first check out the [quic
 | 22  | [non_iid_detection](non_iid_detection/non_iid_detection.ipynb)  | Use Datalab to detect non-IID sampling (e.g. drift) in datasets based on numeric features or embeddings. |
 | 23  | [object_detection](object_detection/README.md)  | Train Detectron2 object detection model for use with cleanlab. |
 | 24  | [semantic segmentation](segmentation/training_ResNeXt50_for_Semantic_Segmentation_on_SYNTHIA.ipynb)  | Train ResNeXt semantic segmentation model for use with cleanlab. |
+| 24  | [spurious correlations](spurious_correlations_datalab/detecting_spurious_correlations.ipynb)  | Train a CNN model on spurious and non-spurious versions of a subset of [Food-101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/) dataset. Use `Datalab` to detect issues in the spuriously correlated datasets. |
 
 
 ## Instructions
