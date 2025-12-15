@@ -1,8 +1,8 @@
 # cleanlab Examples
 
-This repo contains code examples that demonstrate how to use [cleanlab](https://github.com/cleanlab/cleanlab) with specific real-world models/datasets, how its underlying algorithms work, how to get better results via advanced functionality, and how to train certain models used in some cleanlab tutorials.  
+This repo contains code examples of how to use [cleanlab](https://github.com/cleanlab/cleanlab) with specific real-world models/datasets, how its underlying algorithms work, how to get better results via advanced functionality, and how to train certain models used in some cleanlab tutorials.  
 
-To quickly learn how to run cleanlab on your own data, first check out the [quickstart tutorials](https://docs.cleanlab.ai/) before diving into the examples below. [Our blog](https://cleanlab.ai/blog/) demonstrates many more applications beyond these code examples.   
+To quickly learn how to run cleanlab on your own data, first check out the [quickstart tutorials](https://docs.cleanlab.ai/) before diving into the examples below. [Our blog](https://cleanlab.ai/blog/learn/) demonstrates more applications beyond these examples.   
 
 ## Table of Contents
 
@@ -41,10 +41,10 @@ To quickly learn how to run cleanlab on your own data, first check out the [quic
 To run the latest example notebooks, you can install the dependencies required for each example by calling `pip install -r requirements.txt` inside the subfolder for that example (each example's subfolder contains a separate `requirements.txt` file). 
 
 It is recommended to run the examples with the latest stable cleanlab release (`pip install cleanlab`). 
-However be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence some very-recently added examples may require you to instead install the developer version of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`). 
-To see the examples corresponding to specific version of cleanlab, check out the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository (e.g. the examples for cleanlab v2.1.0 are [here](https://github.com/cleanlab/examples/tree/v2.1.0)).
+Be aware that notebooks in the master branch of this repository are assumed to correspond to master branch version of cleanlab, hence recently added examples may require you to install the developer version of cleanlab (`pip install git+https://github.com/cleanlab/cleanlab.git`). 
 
-### Older Examples
+
+## Older Examples
 
 For running older versions of cleanlab, look at the [Tagged Releases](https://github.com/cleanlab/examples/releases) of this repository to see the corresponding older versions of the example notebooks (e.g. the examples for cleanlab v2.0.0 are [here](https://github.com/cleanlab/examples/tree/v2.0.0)). 
 
@@ -329,11 +329,6 @@ Now that you have `indices_of_label_errors`, you can remove those label issues a
 
 <br>
 
-If you'd like to accomplish any of the workflows demonstrated in these notebooks without having to: write code, train your own machine learning system, or set up your own interface to the data/results, then try [Cleanlab Studio](https://cleanlab.ai/studio/?utm_source=github&utm_medium=readme&utm_campaign=clostostudio). This platform integrates Cleanlab data quality algorithms with the *best* AI and interfaces to [automatically find and fix issues in datasets](https://cleanlab.ai/blog/data-centric-ai/). There is no easier way to turn *unreliable* raw data into *reliable* models/analytics.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/cleanlab/assets/master/cleanlab/full-automated-ai-pipeline.jpg" alt="Stages of modern AI pipeline that can now be automated with Cleanlab Studio">
-</p>
 
 ## License
 
