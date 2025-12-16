@@ -1,6 +1,7 @@
 The files in this entity_recognition/ folder are independently licensed under the GNU Affero General Public License v3.0.
 The full text for this license is provided below.
 This GNU Affero General Public License v3.0 only applies to files within this entity_recognition/ folder.
+The code in this folder is provided as a standalone example and is not intended to form a combined or derivative work with code in other directories of this repository.
 
 
                     GNU AFFERO GENERAL PUBLIC LICENSE
